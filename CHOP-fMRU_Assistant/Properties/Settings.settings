@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Sort_and_Check_for_CHOP_fMRU.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DataDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">No database selected.</Value>
+    </Setting>
+    <Setting Name="CurrentStudy" Type="System.String" Scope="User">
+      <Value Profile="(Default)">No patient selected.</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

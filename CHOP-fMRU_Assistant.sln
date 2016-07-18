@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "grd-dlls", "grd-dlls", "{125AC242-A1D0-43E2-B176-C8BB7B379166}"
+	ProjectSection(SolutionItems) = preProject
+		gdcm-dlls\@gdcm-dll_Instructions.txt = gdcm-dlls\@gdcm-dll_Instructions.txt
+		gdcm-dlls\gdcm-sharp.dll = gdcm-dlls\gdcm-sharp.dll
+		gdcm-dlls\gdcmcharls.dll = gdcm-dlls\gdcmcharls.dll
+		gdcm-dlls\gdcmCommon.dll = gdcm-dlls\gdcmCommon.dll
+		gdcm-dlls\gdcmDICT.dll = gdcm-dlls\gdcmDICT.dll
+		gdcm-dlls\gdcmDSED.dll = gdcm-dlls\gdcmDSED.dll
+		gdcm-dlls\gdcmexpat.dll = gdcm-dlls\gdcmexpat.dll
+		gdcm-dlls\gdcmgetopt.dll = gdcm-dlls\gdcmgetopt.dll
+		gdcm-dlls\gdcmIOD.dll = gdcm-dlls\gdcmIOD.dll
+		gdcm-dlls\gdcmjpeg12.dll = gdcm-dlls\gdcmjpeg12.dll
+		gdcm-dlls\gdcmjpeg16.dll = gdcm-dlls\gdcmjpeg16.dll
+		gdcm-dlls\gdcmjpeg8.dll = gdcm-dlls\gdcmjpeg8.dll
+		gdcm-dlls\gdcmMEXD.dll = gdcm-dlls\gdcmMEXD.dll
+		gdcm-dlls\gdcmMSFF.dll = gdcm-dlls\gdcmMSFF.dll
+		gdcm-dlls\gdcmopenjpeg.dll = gdcm-dlls\gdcmopenjpeg.dll
+		gdcm-dlls\gdcmsharpglue.dll = gdcm-dlls\gdcmsharpglue.dll
+		gdcm-dlls\gdcmzlib.dll = gdcm-dlls\gdcmzlib.dll
+		gdcm-dlls\socketxx.dll = gdcm-dlls\socketxx.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CHOP-fMRU_Assistant", "CHOP-fMRU_Assistant\CHOP-fMRU_Assistant.csproj", "{EB9101A3-D180-49C3-BFF6-197BD8F56D02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRD_Utils", "GRD_Utils\GRD_Utils.csproj", "{36C715DF-629A-4858-B502-F04F41EEA6CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB9101A3-D180-49C3-BFF6-197BD8F56D02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB9101A3-D180-49C3-BFF6-197BD8F56D02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB9101A3-D180-49C3-BFF6-197BD8F56D02}.Debug|x64.ActiveCfg = Debug|x64
+		{EB9101A3-D180-49C3-BFF6-197BD8F56D02}.Debug|x64.Build.0 = Debug|x64
+		{EB9101A3-D180-49C3-BFF6-197BD8F56D02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB9101A3-D180-49C3-BFF6-197BD8F56D02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB9101A3-D180-49C3-BFF6-197BD8F56D02}.Release|x64.ActiveCfg = Release|x64
+		{EB9101A3-D180-49C3-BFF6-197BD8F56D02}.Release|x64.Build.0 = Release|x64
+		{36C715DF-629A-4858-B502-F04F41EEA6CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36C715DF-629A-4858-B502-F04F41EEA6CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36C715DF-629A-4858-B502-F04F41EEA6CC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{36C715DF-629A-4858-B502-F04F41EEA6CC}.Debug|x64.Build.0 = Debug|Any CPU
+		{36C715DF-629A-4858-B502-F04F41EEA6CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36C715DF-629A-4858-B502-F04F41EEA6CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36C715DF-629A-4858-B502-F04F41EEA6CC}.Release|x64.ActiveCfg = Release|Any CPU
+		{36C715DF-629A-4858-B502-F04F41EEA6CC}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
