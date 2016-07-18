@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "grd-dlls", "grd-dlls", "{125AC242-A1D0-43E2-B176-C8BB7B379166}"
 	ProjectSection(SolutionItems) = preProject
 		gdcm-dlls\@gdcm-dll_Instructions.txt = gdcm-dlls\@gdcm-dll_Instructions.txt
+		gdcm-dlls\Copyright.txt = gdcm-dlls\Copyright.txt
 		gdcm-dlls\gdcm-sharp.dll = gdcm-dlls\gdcm-sharp.dll
 		gdcm-dlls\gdcmcharls.dll = gdcm-dlls\gdcmcharls.dll
 		gdcm-dlls\gdcmCommon.dll = gdcm-dlls\gdcmCommon.dll
@@ -28,6 +29,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CHOP-fMRU_Assistant", "CHOP-fMRU_Assistant\CHOP-fMRU_Assistant.csproj", "{EB9101A3-D180-49C3-BFF6-197BD8F56D02}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRD_Utils", "GRD_Utils\GRD_Utils.csproj", "{36C715DF-629A-4858-B502-F04F41EEA6CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ABA6826A-F3A1-4732-88FA-32BCFF5CD38D}"
+	ProjectSection(SolutionItems) = preProject
+		license.txt = license.txt
+		README.txt = README.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
