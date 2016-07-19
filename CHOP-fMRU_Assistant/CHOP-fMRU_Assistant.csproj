@@ -105,11 +105,11 @@
     <Compile Include="Patients.Designer.cs">
       <DependentUpon>Patients.cs</DependentUpon>
     </Compile>
-    <Compile Include="Series Editor.cs">
+    <Compile Include="Study Editor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Series Editor.Designer.cs">
-      <DependentUpon>Series Editor.cs</DependentUpon>
+    <Compile Include="Study Editor.Designer.cs">
+      <DependentUpon>Study Editor.cs</DependentUpon>
     </Compile>
     <Compile Include="Settings.cs">
       <SubType>Form</SubType>
@@ -131,8 +131,8 @@
     <EmbeddedResource Include="Patients.resx">
       <DependentUpon>Patients.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Series Editor.resx">
-      <DependentUpon>Series Editor.cs</DependentUpon>
+    <EmbeddedResource Include="Study Editor.resx">
+      <DependentUpon>Study Editor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>

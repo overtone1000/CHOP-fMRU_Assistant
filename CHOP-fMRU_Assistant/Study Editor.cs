@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace CHOP_fMRU_Assistant
 {
-    public partial class Series_Editor : Form
+    public partial class Study_Editor : Form
     {
         DynamicStudy study;
         MainForm owner;
         private delegate void deleg();
-        public Series_Editor(DynamicStudy studyinterogated, MainForm parent)
+        public Study_Editor(DynamicStudy studyinterogated, MainForm parent)
         {
             InitializeComponent();
             owner = parent;
@@ -35,8 +35,12 @@ namespace CHOP_fMRU_Assistant
             foreach(object i in comboBox1.Items)
             {
                 String s = (string)i;
-                if (seriesUID == s) { comboBox1.SelectedItem = i; }
+                if (seriesUID == s) {
+                    comboBox1.SelectedItem = i;
+                    return;
+                }
             }
+            if (comboBox1.Items.Count > 0) { comboBox1.SelectedItem = comboBox1.Items[0]; }
         }
         private void PopulateDatabox()
         {
@@ -117,7 +121,7 @@ namespace CHOP_fMRU_Assistant
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             //this.BeginInvoke(new deleg(PopulateDatabox));
-            this.seriesUID = (string)comboBox1.SelectedItem;
+            this.seriesUID = comboBox1.SelectedItem.ToString();
             PopulateDatabox(true);
         }
 
@@ -145,7 +149,7 @@ namespace CHOP_fMRU_Assistant
             label1.Refresh();
 
             String file = study.ImageFile(seriesUID, sliceposition, acquisitiontime);
-            if (file == "") {
+            if (file == "" || file==null) {
                 pictureBox1.Image = null;
                 pictureBox1.Refresh();
                 return; }
@@ -248,6 +252,25 @@ namespace CHOP_fMRU_Assistant
         private void button5_Click(object sender, EventArgs e)
         {
             study.ExcludeAfterPosition(sliceposition);
+            PopulateCombobox();
+            PopulateDatabox(true);
+        }
+
+        private void Series_Editor_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            study.ExcludeTime(acquisitiontime);
+            PopulateCombobox();
+            PopulateDatabox(true);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            study.ExcludePosition(acquisitiontime);
             PopulateCombobox();
             PopulateDatabox(true);
         }

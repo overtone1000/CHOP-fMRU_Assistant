@@ -11,10 +11,10 @@ C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-fMRU_Assistant\obj\x64\Debug\CHOP-fMRU_Assistant.csprojResolveAssemblyReference.cache
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-fMRU_Assistant\obj\x64\Debug\CHOP_fMRU_Assistant.Inspect_DICOM_Files.resources
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-fMRU_Assistant\obj\x64\Debug\CHOP_fMRU_Assistant.Patients.resources
-C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-fMRU_Assistant\obj\x64\Debug\CHOP_fMRU_Assistant.Series_Editor.resources
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-fMRU_Assistant\obj\x64\Debug\CHOP_fMRU_Assistant.Settings.resources
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-fMRU_Assistant\obj\x64\Debug\CHOP_fMRU_Assistant.MainForm.resources
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-fMRU_Assistant\obj\x64\Debug\CHOP-fMRU_Assistant.exe.manifest
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-fMRU_Assistant\obj\x64\Debug\CHOP-fMRU_Assistant.application
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-fMRU_Assistant\obj\x64\Debug\CHOP-fMRU_Assistant.exe
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-fMRU_Assistant\obj\x64\Debug\CHOP-fMRU_Assistant.pdb
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-fMRU_Assistant\obj\x64\Debug\CHOP_fMRU_Assistant.Study_Editor.resources

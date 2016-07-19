@@ -146,7 +146,7 @@ namespace CHOP_fMRU_Assistant
                 change_SS_prog(filesprocessed,0,filecount);
             }
 
-            Series_Editor se = new Series_Editor(study,this);
+            Study_Editor se = new Study_Editor(study,this);
             //this.BeginInvoke(new delegate_SS(se.Autosize));
             this.BeginInvoke(new delegate_SS(se.Show));
 

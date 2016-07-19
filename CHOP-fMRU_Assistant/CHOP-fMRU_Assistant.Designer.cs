@@ -50,7 +50,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(141, 23);
             this.button3.TabIndex = 21;
-            this.button3.Text = "Series Editor";
+            this.button3.Text = "Study Editor";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -99,28 +99,28 @@
             this.changePatientToolStripMenuItem,
             this.deletePatientToolStripMenuItem});
             this.patientToolStripMenuItem.Name = "patientToolStripMenuItem";
-            this.patientToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
-            this.patientToolStripMenuItem.Text = "Patient";
+            this.patientToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.patientToolStripMenuItem.Text = "Study";
             // 
             // newPatientToolStripMenuItem
             // 
             this.newPatientToolStripMenuItem.Name = "newPatientToolStripMenuItem";
-            this.newPatientToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
-            this.newPatientToolStripMenuItem.Text = "Import Patient";
+            this.newPatientToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newPatientToolStripMenuItem.Text = "Import Study";
             this.newPatientToolStripMenuItem.Click += new System.EventHandler(this.newPatientToolStripMenuItem_Click);
             // 
             // changePatientToolStripMenuItem
             // 
             this.changePatientToolStripMenuItem.Name = "changePatientToolStripMenuItem";
-            this.changePatientToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
-            this.changePatientToolStripMenuItem.Text = "Change Patient";
+            this.changePatientToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.changePatientToolStripMenuItem.Text = "Change Study";
             this.changePatientToolStripMenuItem.Click += new System.EventHandler(this.changePatientToolStripMenuItem_Click);
             // 
             // deletePatientToolStripMenuItem
             // 
             this.deletePatientToolStripMenuItem.Name = "deletePatientToolStripMenuItem";
-            this.deletePatientToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
-            this.deletePatientToolStripMenuItem.Text = "Delete Patient";
+            this.deletePatientToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.deletePatientToolStripMenuItem.Text = "Delete Study";
             this.deletePatientToolStripMenuItem.Click += new System.EventHandler(this.deletePatientToolStripMenuItem_Click);
             // 
             // settingsToolStripMenuItem
@@ -150,7 +150,7 @@
             this.checkBox1.Text = "Anonymize for Testing";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -161,8 +161,8 @@
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.button3);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
-            this.Text = "Sort and Check for CHOP-fMRU";
+            this.Name = "MainForm";
+            this.Text = "CHOP-fMRU Assistant";
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);

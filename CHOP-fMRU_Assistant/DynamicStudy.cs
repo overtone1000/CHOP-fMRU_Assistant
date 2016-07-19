@@ -63,7 +63,7 @@ namespace CHOP_fMRU_Assistant
                 innerlist.Add(acquisitiontime, filename);
             }
              */
-            DynamicStudyImageKey k;
+            DynamicStudyImageKey k=new DynamicStudyImageKey();
             k.seriesUID = seriesUID;
             k.time = acquisitiontime;
             k.position = sliceposition;
@@ -78,6 +78,20 @@ namespace CHOP_fMRU_Assistant
             String retval = "";
             if (seriesUID == null) { return retval; }
             seriesnames.TryGetValue(seriesUID, out retval);
+            return retval;
+        }
+        public String SeriesUIDfromDescription(String series_description)
+        {
+            String retval = "";
+            if (series_description == null) { return retval; }
+            foreach(String s in seriesnames.Keys)
+            {
+                String result;
+                if(seriesnames.TryGetValue(s, out result) && result==series_description)
+                {
+                    return s;
+                }
+            }
             return retval;
         }
         public List<String> SeriesUIDs()
@@ -160,7 +174,7 @@ namespace CHOP_fMRU_Assistant
             }
              return false;
              */
-            DynamicStudyImageKey k;
+            DynamicStudyImageKey k=new DynamicStudyImageKey();
             k.seriesUID = seriesUID;
             k.time = acquisitiontime;
             k.position = sliceposition;
@@ -183,7 +197,7 @@ namespace CHOP_fMRU_Assistant
             }
             */
             String retval;
-            DynamicStudyImageKey k;
+            DynamicStudyImageKey k=new DynamicStudyImageKey();
             k.seriesUID = seriesUID;
             k.time = acquisitiontime;
             k.position = sliceposition;
@@ -230,6 +244,20 @@ namespace CHOP_fMRU_Assistant
             foreach (DynamicStudyImageKey k in images.Keys.ToArray())
             {
                 if (k.time < time) { ExcludeImage(k); }
+            }
+        }
+        public void ExcludeTime(float time)
+        {
+            foreach (DynamicStudyImageKey k in images.Keys.ToArray())
+            {
+                if (k.time == time) { ExcludeImage(k); }
+            }
+        }
+        public void ExcludePosition(float position)
+        {
+            foreach (DynamicStudyImageKey k in images.Keys.ToArray())
+            {
+                if (k.position == position) { ExcludeImage(k); }
             }
         }
         public void ExcludeAfterTime(float time)

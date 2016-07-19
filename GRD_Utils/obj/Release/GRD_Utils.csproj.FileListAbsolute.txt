@@ -10,3 +10,4 @@ C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\GRD_U
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\GRD_Utils\bin\Release\GRD_Utils.pdb
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\GRD_Utils\obj\Release\GRD_Utils.dll
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\GRD_Utils\obj\Release\GRD_Utils.pdb
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\GRD_Utils\obj\Release\GRD_Utils.csprojResolveAssemblyReference.cache
