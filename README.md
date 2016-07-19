@@ -10,7 +10,7 @@ CHOP-fMRU is a piece of medical software created at Children's Hospital of Phila
 
 ## License
 
-This open source project available under the simplified BSD license. It relies on the Grassroots DICOM library, which is available under the same license.
+This open source project is available under the simplified BSD license. It relies on the Grassroots DICOM library, which is available under the same license.
 
 ## System Requirements
 
