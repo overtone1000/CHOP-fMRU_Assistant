@@ -4,7 +4,7 @@
 
 CHOP-fMRU is a piece of medical software created at Children's Hospital of Philadelphia to perform functional MR urography and is based on the IDL framework. While implementing CHOP-fMRU at OHSU, I encountered several barriers that were best addressed with additional software. This adjunct program is designed to:
 * Organize DICOM files from multiple studies
-* Adjust DICOM header values to reflect assumptions made by CHOP-fMRU software and allow them to be imported into the study
+* Adjust DICOM header values to reflect assumptions made by CHOP-fMRU software and allow them to be imported into the program for analysis
 * Selectively exclude certain time points or slice positions from the study
 * Create new DICOM files from the images that are exported from CHOP-fMRU so they can be uploaded back to PACS as an additional series within the study.
 
