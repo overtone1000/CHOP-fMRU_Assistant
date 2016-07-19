@@ -21,6 +21,8 @@ This open source project is available under the simplified BSD license. It relie
 
 To quickly get started with the application, simply [download this zip file](https://github.com/overtone1000/CHOP-fMRU_Assistant/raw/master/CHOP-fMRU_Assistant_Release.zip), which contains the current stable release version. Extract the folder to your file system and run the **CHOP-fMRU_Assistant** application.
 
+Visit the [wiki](https://github.com/overtone1000/CHOP-fMRU_Assistant/wiki) for instructions on how to use the program to make functional urography with CHOP-fMRU a little easier!
+
 ## Developers
 
 This software is developed in C# using Visual Studio 2015. It's based on the 64-bit, C# wrapped version of the Grassroots DICOM library. Please feel free to submit issues through git or to contribute to the project yourself. Learning to collaborate using Git is the primary reason I decided to share this project.
