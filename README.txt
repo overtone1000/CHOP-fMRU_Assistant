@@ -9,8 +9,8 @@ While implementing CHOP-fMRU for my institution, I encountered several barriers 
 
 This project was developed in C# using Visual Studio Community 2015 and is available under the simplified BSD license. It is based on the Grassroots DICOM library, which is available under the same license.
 
-I will create a more detailed wiki, which will be available in this git repository. For now, getting started will require:
+A more detailed wiki is in the making, which will be available in this git repository. For now, getting started will require:
 - .NET Framework 4.5 (minimum)
 - 64-bit OS
 
-Tyler
+For now, if you'd like to play with the program

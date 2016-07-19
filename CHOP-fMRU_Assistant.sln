@@ -32,6 +32,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRD_Utils", "GRD_Utils\GRD_
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ABA6826A-F3A1-4732-88FA-32BCFF5CD38D}"
 	ProjectSection(SolutionItems) = preProject
+		Icon1.ico = Icon1.ico
 		license.txt = license.txt
 		README.txt = README.txt
 	EndProjectSection
