@@ -19,7 +19,7 @@ This open source project is available under the simplified BSD license. It relie
 
 ## Getting Started
 
-To quickly get started with the application, simply download the zip file containing the most recent stable release ([linke to the zipfile in repository](https://github.com/overtone1000/CHOP-fMRU_Assistant/blob/master/CHOP-fMRU_Assistant_Release.zip)) and [download the file](https://github.com/overtone1000/CHOP-fMRU_Assistant/raw/master/CHOP-fMRU_Assistant_Release.zip). Extract the folder to your file system and run the **CHOP-fMRU_Assistant** application.
+To quickly get started with the application, simply download the zip file containing the most recent stable release ([link to the zipfile in repository](https://github.com/overtone1000/CHOP-fMRU_Assistant/blob/master/CHOP-fMRU_Assistant_Release.zip)) and [download the file](https://github.com/overtone1000/CHOP-fMRU_Assistant/raw/master/CHOP-fMRU_Assistant_Release.zip). Extract the folder to your file system and run the **CHOP-fMRU_Assistant** application.
 
 ## Developers
 
