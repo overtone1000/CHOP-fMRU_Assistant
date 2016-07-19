@@ -1,0 +1,27 @@
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Sort and Check for CHOP-fMRU\bin\Debug\Program.cs
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Sort and Check for CHOP-fMRU\bin\Debug\Sort and Check for CHOP-fMRU.exe.config
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Sort and Check for CHOP-fMRU\bin\Debug\Sort and Check for CHOP-fMRU.exe.manifest
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Sort and Check for CHOP-fMRU\bin\Debug\Sort and Check for CHOP-fMRU.application
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Sort and Check for CHOP-fMRU\bin\Debug\Sort and Check for CHOP-fMRU.exe
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Sort and Check for CHOP-fMRU\bin\Debug\Sort and Check for CHOP-fMRU.pdb
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Sort and Check for CHOP-fMRU\bin\Debug\gdcm-sharp.dll
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Sort and Check for CHOP-fMRU\bin\Debug\GRD_Utils.pdb
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Sort and Check for CHOP-fMRU\obj\Debug\Sort and Check for CHOP-fMRU.csprojResolveAssemblyReference.cache
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Sort and Check for CHOP-fMRU\obj\Debug\Sort_and_Check_for_CHOP_fMRU.Inspect_DICOM_Files.resources
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Sort and Check for CHOP-fMRU\obj\Debug\Sort_and_Check_for_CHOP_fMRU.Patients.resources
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Sort and Check for CHOP-fMRU\obj\Debug\Sort_and_Check_for_CHOP_fMRU.Settings.resources
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Sort and Check for CHOP-fMRU\obj\Debug\Sort_and_Check_for_CHOP_fMRU.Form1.resources
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Sort and Check for CHOP-fMRU\obj\Debug\Sort_and_Check_for_CHOP_fMRU.Properties.Resources.resources
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Sort and Check for CHOP-fMRU\obj\Debug\Sort and Check for CHOP-fMRU.csproj.GenerateResource.Cache
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Sort and Check for CHOP-fMRU\obj\Debug\Sort and Check for CHOP-fMRU.exe.manifest
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Sort and Check for CHOP-fMRU\obj\Debug\Sort and Check for CHOP-fMRU.application
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Sort and Check for CHOP-fMRU\obj\Debug\Sort and Check for CHOP-fMRU.exe
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Sort and Check for CHOP-fMRU\obj\Debug\Sort and Check for CHOP-fMRU.pdb
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Sort and Check for CHOP-fMRU\obj\Debug\Sort_and_Check_for_CHOP_fMRU.Series_Editor.resources
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Sort and Check for CHOP-fMRU\bin\Debug\GRD_Utils.dll
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\Sort and Check for CHOP-fMRU\bin\Debug\Sort and Check for CHOP-fMRU.exe.config
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\Sort and Check for CHOP-fMRU\obj\Debug\Sort and Check for CHOP-fMRU.exe
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\Sort and Check for CHOP-fMRU\obj\Debug\Sort and Check for CHOP-fMRU.pdb
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\Sort and Check for CHOP-fMRU\bin\Debug\Sort and Check for CHOP-fMRU.exe.config
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\Sort and Check for CHOP-fMRU\obj\Debug\Sort and Check for CHOP-fMRU.exe
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\Sort and Check for CHOP-fMRU\obj\Debug\Sort and Check for CHOP-fMRU.pdb
