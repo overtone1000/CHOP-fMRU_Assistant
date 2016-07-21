@@ -1,4 +1,6 @@
-# CHOP-fMRU_Assistant
+# CHOP-fMRU
+
+## [CHOP-fMRU Assistant Wiki](https://github.com/overtone1000/CHOP-fMRU_Assistant/wiki)
 
 ## Overview
 
