@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CHOP-fMRU_Assistant.exe" size="38384">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CHOP-fMRU_Assistant.exe" size="39408">
       <assemblyIdentity name="CHOP-fMRU_Assistant" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>jFtkHWP7IlscWgux0ee+oFGPR+v1mGqlIx0z9BDStfg=</dsig:DigestValue>
+        <dsig:DigestValue>j89kq4aBJ6c9/uJN/UJWzs6Ejo7psTcnRJumVAgacz4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
