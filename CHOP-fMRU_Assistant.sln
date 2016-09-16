@@ -3,38 +3,61 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "grd-dlls", "grd-dlls", "{125AC242-A1D0-43E2-B176-C8BB7B379166}"
-	ProjectSection(SolutionItems) = preProject
-		gdcm-dlls\@gdcm-dll_Instructions.txt = gdcm-dlls\@gdcm-dll_Instructions.txt
-		gdcm-dlls\Copyright.txt = gdcm-dlls\Copyright.txt
-		gdcm-dlls\gdcm-sharp.dll = gdcm-dlls\gdcm-sharp.dll
-		gdcm-dlls\gdcmcharls.dll = gdcm-dlls\gdcmcharls.dll
-		gdcm-dlls\gdcmCommon.dll = gdcm-dlls\gdcmCommon.dll
-		gdcm-dlls\gdcmDICT.dll = gdcm-dlls\gdcmDICT.dll
-		gdcm-dlls\gdcmDSED.dll = gdcm-dlls\gdcmDSED.dll
-		gdcm-dlls\gdcmexpat.dll = gdcm-dlls\gdcmexpat.dll
-		gdcm-dlls\gdcmgetopt.dll = gdcm-dlls\gdcmgetopt.dll
-		gdcm-dlls\gdcmIOD.dll = gdcm-dlls\gdcmIOD.dll
-		gdcm-dlls\gdcmjpeg12.dll = gdcm-dlls\gdcmjpeg12.dll
-		gdcm-dlls\gdcmjpeg16.dll = gdcm-dlls\gdcmjpeg16.dll
-		gdcm-dlls\gdcmjpeg8.dll = gdcm-dlls\gdcmjpeg8.dll
-		gdcm-dlls\gdcmMEXD.dll = gdcm-dlls\gdcmMEXD.dll
-		gdcm-dlls\gdcmMSFF.dll = gdcm-dlls\gdcmMSFF.dll
-		gdcm-dlls\gdcmopenjpeg.dll = gdcm-dlls\gdcmopenjpeg.dll
-		gdcm-dlls\gdcmsharpglue.dll = gdcm-dlls\gdcmsharpglue.dll
-		gdcm-dlls\gdcmzlib.dll = gdcm-dlls\gdcmzlib.dll
-		gdcm-dlls\socketxx.dll = gdcm-dlls\socketxx.dll
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CHOP-fMRU_Assistant", "CHOP-fMRU_Assistant\CHOP-fMRU_Assistant.csproj", "{EB9101A3-D180-49C3-BFF6-197BD8F56D02}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRD_Utils", "GRD_Utils\GRD_Utils.csproj", "{36C715DF-629A-4858-B502-F04F41EEA6CC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ABA6826A-F3A1-4732-88FA-32BCFF5CD38D}"
 	ProjectSection(SolutionItems) = preProject
+		gdcm_dlls_2.6\@gdcm-dll_Instructions.txt = gdcm_dlls_2.6\@gdcm-dll_Instructions.txt
+		gdcm_dlls_2.6\Copyright.txt = gdcm_dlls_2.6\Copyright.txt
+		gdcm_dlls_2.6\gdcm-sharp.dll = gdcm_dlls_2.6\gdcm-sharp.dll
+		gdcm_dlls_2.6\gdcmcharls.dll = gdcm_dlls_2.6\gdcmcharls.dll
+		gdcm_dlls_2.6\gdcmCommon.dll = gdcm_dlls_2.6\gdcmCommon.dll
+		gdcm_dlls_2.6\gdcmDICT.dll = gdcm_dlls_2.6\gdcmDICT.dll
+		gdcm_dlls_2.6\gdcmDSED.dll = gdcm_dlls_2.6\gdcmDSED.dll
+		gdcm_dlls_2.6\gdcmexpat.dll = gdcm_dlls_2.6\gdcmexpat.dll
+		gdcm_dlls_2.6\gdcmgetopt.dll = gdcm_dlls_2.6\gdcmgetopt.dll
+		gdcm_dlls_2.6\gdcmIOD.dll = gdcm_dlls_2.6\gdcmIOD.dll
+		gdcm_dlls_2.6\gdcmjni.dll = gdcm_dlls_2.6\gdcmjni.dll
+		gdcm_dlls_2.6\gdcmjpeg12.dll = gdcm_dlls_2.6\gdcmjpeg12.dll
+		gdcm_dlls_2.6\gdcmjpeg16.dll = gdcm_dlls_2.6\gdcmjpeg16.dll
+		gdcm_dlls_2.6\gdcmjpeg8.dll = gdcm_dlls_2.6\gdcmjpeg8.dll
+		gdcm_dlls_2.6\gdcmmd5.dll = gdcm_dlls_2.6\gdcmmd5.dll
+		gdcm_dlls_2.6\gdcmMEXD.dll = gdcm_dlls_2.6\gdcmMEXD.dll
+		gdcm_dlls_2.6\gdcmMSFF.dll = gdcm_dlls_2.6\gdcmMSFF.dll
+		gdcm_dlls_2.6\gdcmopenjpeg.dll = gdcm_dlls_2.6\gdcmopenjpeg.dll
+		gdcm_dlls_2.6\gdcmsharpglue.dll = gdcm_dlls_2.6\gdcmsharpglue.dll
+		gdcm_dlls_2.6\gdcmzlib.dll = gdcm_dlls_2.6\gdcmzlib.dll
 		Icon1.ico = Icon1.ico
 		license.txt = license.txt
 		README.md = README.md
+		gdcm_dlls_2.6\socketxx.dll = gdcm_dlls_2.6\socketxx.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gdcm-dlls_v2.6.5", "gdcm-dlls_v2.6.5", "{6B2E3767-308B-4BB0-B43E-A49E29156825}"
+	ProjectSection(SolutionItems) = preProject
+		gdcm-dlls_v2.6.5\@gdcm-dll_Instructions.txt = gdcm-dlls_v2.6.5\@gdcm-dll_Instructions.txt
+		gdcm-dlls_v2.6.5\Copyright.txt = gdcm-dlls_v2.6.5\Copyright.txt
+		gdcm-dlls_v2.6.5\gdcm-sharp.dll = gdcm-dlls_v2.6.5\gdcm-sharp.dll
+		gdcm-dlls_v2.6.5\gdcmcharls.dll = gdcm-dlls_v2.6.5\gdcmcharls.dll
+		gdcm-dlls_v2.6.5\gdcmCommon.dll = gdcm-dlls_v2.6.5\gdcmCommon.dll
+		gdcm-dlls_v2.6.5\gdcmDICT.dll = gdcm-dlls_v2.6.5\gdcmDICT.dll
+		gdcm-dlls_v2.6.5\gdcmDSED.dll = gdcm-dlls_v2.6.5\gdcmDSED.dll
+		gdcm-dlls_v2.6.5\gdcmexpat.dll = gdcm-dlls_v2.6.5\gdcmexpat.dll
+		gdcm-dlls_v2.6.5\gdcmgetopt.dll = gdcm-dlls_v2.6.5\gdcmgetopt.dll
+		gdcm-dlls_v2.6.5\gdcmIOD.dll = gdcm-dlls_v2.6.5\gdcmIOD.dll
+		gdcm-dlls_v2.6.5\gdcmjni.dll = gdcm-dlls_v2.6.5\gdcmjni.dll
+		gdcm-dlls_v2.6.5\gdcmjpeg12.dll = gdcm-dlls_v2.6.5\gdcmjpeg12.dll
+		gdcm-dlls_v2.6.5\gdcmjpeg16.dll = gdcm-dlls_v2.6.5\gdcmjpeg16.dll
+		gdcm-dlls_v2.6.5\gdcmjpeg8.dll = gdcm-dlls_v2.6.5\gdcmjpeg8.dll
+		gdcm-dlls_v2.6.5\gdcmmd5.dll = gdcm-dlls_v2.6.5\gdcmmd5.dll
+		gdcm-dlls_v2.6.5\gdcmMEXD.dll = gdcm-dlls_v2.6.5\gdcmMEXD.dll
+		gdcm-dlls_v2.6.5\gdcmMSFF.dll = gdcm-dlls_v2.6.5\gdcmMSFF.dll
+		gdcm-dlls_v2.6.5\gdcmopenjpeg.dll = gdcm-dlls_v2.6.5\gdcmopenjpeg.dll
+		gdcm-dlls_v2.6.5\gdcmsharpglue.dll = gdcm-dlls_v2.6.5\gdcmsharpglue.dll
+		gdcm-dlls_v2.6.5\gdcmzlib.dll = gdcm-dlls_v2.6.5\gdcmzlib.dll
+		gdcm-dlls_v2.6.5\socketxx.dll = gdcm-dlls_v2.6.5\socketxx.dll
 	EndProjectSection
 EndProject
 Global

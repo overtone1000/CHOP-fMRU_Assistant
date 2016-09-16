@@ -1,0 +1,10 @@
+Any project that references these dlls will need them copied to the bin before compilation.
+
+Manually copy this folder into the solution folder.
+
+Reference gdcm-sharp.dll in the project.
+
+Set the target platform to x64. These dlls are for windows x64. 32-bit would require a different set of dlls to be built...
+
+In project properties for each referencing project, add the following pre-build event:
+copy "$(SolutionDir)gdcm-dlls_v2.6.5\*.dll" "$(TargetDir)*.dll"

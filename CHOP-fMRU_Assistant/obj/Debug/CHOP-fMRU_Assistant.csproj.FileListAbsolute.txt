@@ -4,3 +4,4 @@ C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\Sort 
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-fMRU_Assistant\bin\Debug\Sort and Check for CHOP-fMRU.exe.config
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-fMRU_Assistant\obj\Debug\Sort and Check for CHOP-fMRU.exe
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-fMRU_Assistant\obj\Debug\Sort and Check for CHOP-fMRU.pdb
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-fMRU_Assistant\bin\Debug\CHOP-fMRU_Assistant.exe.config

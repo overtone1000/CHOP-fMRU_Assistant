@@ -24,7 +24,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ProductName>Sort and Check for CHOP-FMRU</ProductName>
     <PublisherName>Tyler Moore</PublisherName>
-    <ApplicationRevision>13</ApplicationRevision>
+    <ApplicationRevision>14</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -78,7 +78,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="gdcm-sharp">
-      <HintPath>..\gdcm_dlls\gdcm-sharp.dll</HintPath>
+      <HintPath>..\gdcm_dlls_2.6\gdcm-sharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -191,7 +191,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PreBuildEvent>copy "$(SolutionDir)\gdcm-dlls\*.dll" "$(TargetDir)*.dll"</PreBuildEvent>
+    <PreBuildEvent>copy "$(SolutionDir)gdcm-dlls_v2.6.5\*.dll" "$(TargetDir)*.dll"</PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
     <PostBuildEvent>"$(SolutionDir)\zip_release.bat"</PostBuildEvent>

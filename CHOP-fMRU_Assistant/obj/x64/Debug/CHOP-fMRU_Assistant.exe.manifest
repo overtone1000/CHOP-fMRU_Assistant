@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="CHOP-fMRU_Assistant.exe" version="1.0.0.13" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="amd64" type="win32" />
+  <asmv1:assemblyIdentity name="CHOP-fMRU_Assistant.exe" version="1.0.0.14" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="amd64" type="win32" />
   <description asmv2:iconFile="Icon1.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -50,19 +50,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>6VdXRJuNabEYmFo7ZcyfclHMMUDSNbQ2PaNMtD3cyUI=</dsig:DigestValue>
+        <dsig:DigestValue>uvFcPHlV73JD3PnGGT9GB9mlDuq+hdJTv7IVA4dQTo0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="gdcm-sharp.dll" size="536576">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="gdcm-sharp.dll" size="460800">
       <assemblyIdentity name="gdcm-sharp" version="2.6.0.0" publicKeyToken="AA55076F0CA26F2F" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>tfyh5jYK89H2/HdYvILp+M3lpDztyOpJ4KHo5+8thLw=</dsig:DigestValue>
+        <dsig:DigestValue>DMQuY262daf0ZsV8QrwKyIa5QASO6khJMneltKWQUu8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -74,7 +74,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>dBgMnQo9fVifSM9NXtQIN/01Ed87gG0GdEbObPwtW7I=</dsig:DigestValue>
+        <dsig:DigestValue>IRjYjBWQMWWNHorXJLND8K2woHTxzWkSckhhpaeZIBA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
