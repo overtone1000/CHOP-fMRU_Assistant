@@ -77,8 +77,9 @@
     <ApplicationIcon>Icon1.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="gdcm-sharp">
-      <HintPath>..\gdcm_dlls_2.6\gdcm-sharp.dll</HintPath>
+    <Reference Include="gdcm-sharp, Version=2.6.0.0, Culture=neutral, PublicKeyToken=aa55076f0ca26f2f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\gdcm-dlls_v2.6.5\gdcm-sharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

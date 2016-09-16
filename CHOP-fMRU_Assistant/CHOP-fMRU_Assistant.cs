@@ -226,77 +226,86 @@ namespace CHOP_fMRU_Assistant
         private bool import_cont = false;
         private void ImportPatient()
         {
-            import_cont = true;
-            if (!DatabaseDefined()) { return; }
-            FolderBrowserDialog fbd = new FolderBrowserDialog();
-            if (fbd.ShowDialog()==DialogResult.OK)
+            try
             {
-                //Do sort and check right away, putting the resulting files in the right place in the destination directory.
-                System.IO.DirectoryInfo basedir = new System.IO.DirectoryInfo(Properties.Settings.Default.DataDirectory);
-                if (!basedir.Exists) { basedir.Create(); }
-                
-                GRD_Utils.FileIterator fi = new GRD_Utils.FileIterator(fbd.SelectedPath);
-                GRD_Utils.TSConvert tsc = new GRD_Utils.TSConvert(new gdcm.TransferSyntax(gdcm.TransferSyntax.TSType.ExplicitVRLittleEndian));
-                String newname;
-                while (import_cont && fi.MoveNext())
+                import_cont = true;
+                if (!DatabaseDefined()) { return; }
+                FolderBrowserDialog fbd = new FolderBrowserDialog();
+                if (fbd.ShowDialog() == DialogResult.OK)
                 {
-                    change_SS_text("Converting: " + fi.Current.Name);
-                    gdcm.Reader reader = new gdcm.Reader();
-                    reader.SetFileName(fi.Current.FullName);
+                    //Do sort and check right away, putting the resulting files in the right place in the destination directory.
+                    System.IO.DirectoryInfo basedir = new System.IO.DirectoryInfo(Properties.Settings.Default.DataDirectory);
+                    if (!basedir.Exists) { basedir.Create(); }
 
-                    if (reader.CanRead()){
-                        gdcm.TagSetType tst = new gdcm.TagSetType();
-                        tst.Add(GRD_Utils.Tags.tag_patientname);
-                        tst.Add(GRD_Utils.Tags.tag_studyInstanceUID);
-                        tst.Add(GRD_Utils.Tags.tag_studyaccessionnumber);
+                    GRD_Utils.FileIterator fi = new GRD_Utils.FileIterator(fbd.SelectedPath);
+                    GRD_Utils.TSConvert tsc = new GRD_Utils.TSConvert(new gdcm.TransferSyntax(gdcm.TransferSyntax.TSType.ExplicitVRLittleEndian));
+                    String newname;
+                    while (import_cont && fi.MoveNext())
+                    {
+                        change_SS_text("Converting: " + fi.Current.Name);
+                        gdcm.Reader reader = new gdcm.Reader();
+                        reader.SetFileName(fi.Current.FullName);
 
-                        reader.ReadSelectedTags(tst);
-                        //reader.Read();
-                        gdcm.File f;
-                        f = reader.GetFile();
-                        gdcm.DataSet ds = f.GetDataSet();
-
-                        String patname=(String)GRD_Utils.DataElementInterpreter.interpretDE(ds.GetDataElement(GRD_Utils.Tags.tag_patientname));
-                        patname = fixedfilename(patname);
-
-                        String study="";
-                        try
+                        if (reader.CanRead())
                         {
-                            study = (String)GRD_Utils.DataElementInterpreter.interpretDE(ds.GetDataElement(GRD_Utils.Tags.tag_studyaccessionnumber));
-                        }
-                        catch(Exception e)
-                        {
-                            System.Diagnostics.Debug.WriteLine("Accession number read error.");
-                        }
-                        
-                        if (study == null || study == "")
-                        {
-                            study = (String)GRD_Utils.DataElementInterpreter.interpretDE(ds.GetDataElement(GRD_Utils.Tags.tag_studyInstanceUID));
-                            study = fixedfilename(study);
-                        }
+                            gdcm.TagSetType tst = new gdcm.TagSetType();
+                            tst.Add(GRD_Utils.Tags.tag_patientname);
+                            tst.Add(GRD_Utils.Tags.tag_studyInstanceUID);
+                            tst.Add(GRD_Utils.Tags.tag_studyaccessionnumber);
 
-                        tst.Dispose();
+                            reader.ReadSelectedTags(tst);
+                            //reader.Read();
+                            gdcm.File f;
+                            f = reader.GetFile();
+                            gdcm.DataSet ds = f.GetDataSet();
 
-                        System.IO.DirectoryInfo patdir = new System.IO.DirectoryInfo(basedir + "\\" + patname);
-                        if (!patdir.Exists) { patdir.Create(); }
-                        System.IO.DirectoryInfo studydir = new System.IO.DirectoryInfo(patdir.FullName + "\\" + study);
-                        if (!studydir.Exists) {
-                            studydir.Create();
-                            changecurrentstudy(studydir.FullName);
+                            String patname = (String)GRD_Utils.DataElementInterpreter.interpretDE(ds.GetDataElement(GRD_Utils.Tags.tag_patientname));
+                            patname = fixedfilename(patname);
+
+                            String study = "";
+                            try
+                            {
+                                study = (String)GRD_Utils.DataElementInterpreter.interpretDE(ds.GetDataElement(GRD_Utils.Tags.tag_studyaccessionnumber));
+                            }
+                            catch (Exception e)
+                            {
+                                System.Diagnostics.Debug.WriteLine("Accession number read error.");
+                            }
+
+                            if (study == null || study == "")
+                            {
+                                study = (String)GRD_Utils.DataElementInterpreter.interpretDE(ds.GetDataElement(GRD_Utils.Tags.tag_studyInstanceUID));
+                                study = fixedfilename(study);
+                            }
+
+                            tst.Dispose();
+
+                            System.IO.DirectoryInfo patdir = new System.IO.DirectoryInfo(basedir + "\\" + patname);
+                            if (!patdir.Exists) { patdir.Create(); }
+                            System.IO.DirectoryInfo studydir = new System.IO.DirectoryInfo(patdir.FullName + "\\" + study);
+                            if (!studydir.Exists)
+                            {
+                                studydir.Create();
+                                changecurrentstudy(studydir.FullName);
+                            }
+                            System.IO.DirectoryInfo dicomrawdir = new System.IO.DirectoryInfo(studydir.FullName + RawDataSubdirName);
+                            if (!dicomrawdir.Exists) { dicomrawdir.Create(); }
+
+                            newname = dicomrawdir.GetFiles().Count<System.IO.FileInfo>().ToString();
+                            newname = newname.PadLeft(8, '0');
+                            tsc.convert_transfer_syntax(fi.Current, dicomrawdir, newname);
                         }
-                        System.IO.DirectoryInfo dicomrawdir = new System.IO.DirectoryInfo(studydir.FullName + RawDataSubdirName);
-                        if (!dicomrawdir.Exists) { dicomrawdir.Create(); }
-
-                        newname = dicomrawdir.GetFiles().Count<System.IO.FileInfo>().ToString();
-                        newname = newname.PadLeft(8, '0');
-                        tsc.convert_transfer_syntax(fi.Current, dicomrawdir, newname);
+                        reader.Dispose();
+                        change_SS_prog(fi.totalfiles() - fi.filesleft(), 0, fi.totalfiles());
                     }
-                    reader.Dispose();
-                    change_SS_prog(fi.totalfiles() - fi.filesleft(), 0, fi.totalfiles());
                 }
+                change_SS_text();
+                change_SS_prog(0, 0, 1);
             }
-            change_SS_text();
-            change_SS_prog(0, 0, 1);
+            catch(Exception e)
+            {
+                MessageBox.Show(e.StackTrace);
+            }
         }
 
         private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
