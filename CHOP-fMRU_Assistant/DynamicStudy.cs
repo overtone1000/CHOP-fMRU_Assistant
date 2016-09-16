@@ -208,32 +208,18 @@ namespace CHOP_fMRU_Assistant
         {
             String file;
             images.TryGetValue(k, out file);
+            MoveFileToExclusion(file);
+            images.Remove(k);
+        }
+        private void MoveFileToExclusion(String file)
+        {
             System.IO.FileInfo f = new System.IO.FileInfo(file);
             String dest = exclusiondirectory.FullName + "\\" + f.Name;
             System.Diagnostics.Debug.WriteLine("Moving " + f.FullName + " to " + dest);
             f.MoveTo(exclusiondirectory.FullName + "\\" + f.Name);
-            images.Remove(k);
         }
         public void ExcludeSeries(String seriesUID)
         {
-            /*
-            if(outerlist.TryGetValue(seriesUID, out middlelist))
-            {
-                foreach(SortedList<float,String>il in middlelist.Values)
-                {
-                    foreach (String file in il.Values)
-                    {
-                        System.IO.FileInfo f = new System.IO.FileInfo(file);
-                        String dest = exclusiondirectory.FullName + "\\" + f.Name;
-                        System.Diagnostics.Debug.WriteLine("Moving " + f.FullName + " to " + dest);
-                        f.MoveTo(exclusiondirectory.FullName+"\\"+f.Name);
-                    }
-                    il.Clear();
-                }
-                middlelist.Clear();
-                outerlist.Remove(seriesUID);
-            }
-             * */
             foreach(DynamicStudyImageKey k in images.Keys.ToArray())
             {
                 if (k.seriesUID == seriesUID) { ExcludeImage(k);}
@@ -323,6 +309,11 @@ namespace CHOP_fMRU_Assistant
                 float sliceposition = float.Parse(p.sliceposition);
                 float acquisitiontime = float.Parse(p.acquisitiontime);
                 Add(p.seriesUID, p.seriesdesc, acquisitiontime, sliceposition, filename);
+            }
+            else
+            {
+                //If the file doesn't have the above data, just exclude it automatically.
+                MoveFileToExclusion(filename);
             }
         }
     }
