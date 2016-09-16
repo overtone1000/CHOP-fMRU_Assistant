@@ -331,9 +331,14 @@ namespace CHOP_fMRU_Assistant
                 System.Windows.Forms.MessageBox.Show("No patient selected.");
                 return;
             }
-            if (System.Windows.Forms.MessageBox.Show("Are you sure you want to delete this patient's data? This cannot be undone.","",MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (System.Windows.Forms.MessageBox.Show("Are you sure you want to delete this study? This cannot be undone.","",MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                di.Delete();
+                di.Delete(true);
+                if(di.Parent.GetDirectories().Count()==0)
+                {
+                    di.Parent.Delete(true);
+                }
+                change_SS_text();
             }
         }
 

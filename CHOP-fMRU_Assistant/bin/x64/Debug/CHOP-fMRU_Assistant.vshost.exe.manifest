@@ -50,7 +50,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>T55Rs3VPp+goAYSbN3ERNrZvtX+uhisWHtGp40X5b4c=</dsig:DigestValue>
+        <dsig:DigestValue>2ophM7/p5P9r7wa8k7wLrPOMj8rqbiOrmMBfHHCCnE4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="gdcm-sharp.dll" size="460800">
+      <assemblyIdentity name="gdcm-sharp" version="2.6.0.0" publicKeyToken="AA55076F0CA26F2F" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>DMQuY262daf0ZsV8QrwKyIa5QASO6khJMneltKWQUu8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -62,7 +74,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>P5GqykNq5rLtVArPTgrn1pQM+H5TGtrNa4gjl2BoRPQ=</dsig:DigestValue>
+        <dsig:DigestValue>IRjYjBWQMWWNHorXJLND8K2woHTxzWkSckhhpaeZIBA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
