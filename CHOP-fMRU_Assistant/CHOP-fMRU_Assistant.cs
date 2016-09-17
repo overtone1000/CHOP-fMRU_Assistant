@@ -429,6 +429,10 @@ namespace CHOP_fMRU_Assistant
                 change_SS_prog(n, 1, imagestoconvert.Count());
             }
 
+            readertemp.Dispose();
+            ftemp.Dispose();
+            metadata.Dispose();
+
             change_SS_text("Finished conversion.");
             System.Threading.Thread.Sleep(2000);
             change_SS_prog(0, 0, 1);
