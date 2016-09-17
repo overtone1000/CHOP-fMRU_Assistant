@@ -18,3 +18,4 @@ C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-fMRU_Assistant\obj\x64\Debug\CHOP-fMRU_Assistant.exe
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-fMRU_Assistant\obj\x64\Debug\CHOP-fMRU_Assistant.pdb
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-fMRU_Assistant\obj\x64\Debug\CHOP_fMRU_Assistant.Study_Editor.resources
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-fMRU_Assistant\bin\x64\Debug\gdcm-sharp.dll

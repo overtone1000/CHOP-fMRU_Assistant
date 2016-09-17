@@ -17,14 +17,14 @@ namespace GRD_Utils
             VL len = new VL((uint)bytes.Length);
             de.SetByteValue(bytes, len);
         }
-        public static void Convert_to_DICOM(String inputf, string outputf, gdcm.File metadatafile, bool anonymize, String StudyUID, String SeriesUID, int numberofimages, int imagenumber)
+        public static void Convert_to_DICOM(String inputf, string outputf, DataSet metadata, bool anonymize, String StudyUID, String SeriesUID, int numberofimages, int imagenumber) 
         {
             System.IO.FileInfo fi = new System.IO.FileInfo(inputf);
             System.IO.FileStream fs = fi.OpenRead();
             JpegBitmapDecoder decoder = new JpegBitmapDecoder(fs, BitmapCreateOptions.PreservePixelFormat, BitmapCacheOption.Default);
             BitmapSource bitmapSource = decoder.Frames[0];
             fs.Close();
-
+            
             ImageReader r = new ImageReader();
             gdcm.Image image = r.GetImage();
             image.SetNumberOfDimensions(2);
@@ -34,7 +34,7 @@ namespace GRD_Utils
             System.IO.FileStream infile =
                 new System.IO.FileStream(file1, System.IO.FileMode.Open, System.IO.FileAccess.Read);
             //uint fsize = gdcm.PosixEmulation.FileSize(file1);
-
+            
             //byte[] jstream = new byte[fsize];
             //infile.Read(jstream, 0, jstream.Length);
 
@@ -87,7 +87,28 @@ namespace GRD_Utils
             }
             ImageWriter writer = new ImageWriter();
             gdcm.File file = writer.GetFile();
-            file.SetDataSet(metadatafile.GetDataSet());
+
+            /*
+            gdcm.Reader readertemp = new gdcm.Reader();
+            gdcm.File ftemp=null;
+
+            DataSet metadata=new DataSet();
+            while (metadata.IsEmpty())
+            {
+                
+                readertemp.SetFileName(metadatafile);
+                readertemp.Read();
+                ftemp = readertemp.GetFile();
+                metadata = ftemp.GetDataSet();
+                
+            }
+            */
+
+            file.SetDataSet(metadata);
+
+            //metadata.Dispose();
+            //readertemp.Dispose();
+            //ftemp.Dispose();
 
             if (anonymize)
             {
@@ -185,6 +206,8 @@ namespace GRD_Utils
             file.Dispose();
             infile.Dispose();
             fs.Dispose();
+            image.Dispose();
+            
         }
     }
 }

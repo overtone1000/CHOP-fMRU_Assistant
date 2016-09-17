@@ -351,7 +351,7 @@ namespace CHOP_fMRU_Assistant
             }
         }
 
-        private gdcm.File GetCurrentStudyFile()
+        private string GetCurrentStudyFile()
         {
             GRD_Utils.FileIterator fi = new GRD_Utils.FileIterator(Properties.Settings.Default.CurrentStudy+RawDataSubdirName);
             while (fi.MoveNext())
@@ -361,9 +361,8 @@ namespace CHOP_fMRU_Assistant
 
                 if (reader.CanRead())
                 {
-                    reader.Read();
-                    gdcm.File f = reader.GetFile();
-                    return f;
+                    reader.Dispose();
+                    return fi.Current.FullName;
                 }
             }
             return null;
@@ -407,17 +406,29 @@ namespace CHOP_fMRU_Assistant
             int n = 0;
             String seriesUID = new gdcm.UIDGenerator().Generate();
             String studyUID = new gdcm.UIDGenerator().Generate();
+
+            string filefile = GetCurrentStudyFile();
+            gdcm.Reader readertemp = new gdcm.Reader();
+            gdcm.File ftemp;
+            readertemp.SetFileName(filefile);
+            readertemp.Read();
+            ftemp = readertemp.GetFile();
+            gdcm.DataSet metadata = ftemp.GetDataSet();
+
             foreach (String f in imagestoconvert)
             {
                 if (!continueconversion) { return; }
                 change_SS_text("Converting images. Current file: " + f);
                 n += 1;
                 System.IO.FileInfo fi = new System.IO.FileInfo(f);
-                System.IO.FileInfo fi_new = new System.IO.FileInfo(di_out.FullName + "\\" + fixedfilename(fi.Name.Substring(0, fi.Name.LastIndexOf('.'))));
-                if (fi_new.Exists) { fi_new.Delete(); }
-                GRD_Utils.DICOM_Functions.Convert_to_DICOM(fi.FullName, fi_new.FullName, GetCurrentStudyFile(), this.checkBox1.Checked, studyUID, seriesUID, imagestoconvert.Count(), n);
+                if (fi.Extension == ".jpg") {
+                    System.IO.FileInfo fi_new = new System.IO.FileInfo(di_out.FullName + "\\" + fixedfilename(fi.Name.Substring(0, fi.Name.LastIndexOf('.'))));
+                    if (fi_new.Exists) { fi_new.Delete(); }
+                    GRD_Utils.DICOM_Functions.Convert_to_DICOM(fi.FullName, fi_new.FullName, metadata, this.checkBox1.Checked, studyUID, seriesUID, imagestoconvert.Count(), n);
+                }
                 change_SS_prog(n, 1, imagestoconvert.Count());
             }
+
             change_SS_text("Finished conversion.");
             System.Threading.Thread.Sleep(2000);
             change_SS_prog(0, 0, 1);
