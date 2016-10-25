@@ -17,7 +17,7 @@ This open source project is available under the simplified BSD license. It relie
 ## System Requirements
 
 * .NET Framework 4.5 (minimum)
-* 64-bit OS
+* 64-bit Windows
 
 ## Getting Started
 
