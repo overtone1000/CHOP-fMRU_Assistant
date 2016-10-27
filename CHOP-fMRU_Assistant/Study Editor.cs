@@ -83,13 +83,22 @@ namespace CHOP_fMRU_Assistant
                 foreach (float acquisitiontime in acquisitiontimes)
                 {
                     DataGridViewTextBoxCell cell= new DataGridViewTextBoxCell();
-                    if (study.ImageExists(seriesUID, sliceposition, acquisitiontime))
+                    int images = study.ImagesThatExists(seriesUID, sliceposition, acquisitiontime);
+                    if (images==1)
                     {
                         cell.Style.BackColor = Color.Green;
                     }
-                    else
+                    else if(images==0)
                     {
                         cell.Style.BackColor = Color.Red;
+                    }
+                    else if(images>1)
+                    {
+                        cell.Style.BackColor = Color.Orange;
+                    }
+                    else
+                    {
+                        cell.Style.BackColor = Color.Black;
                     }
                     cell.Value="";
                     row.Cells.Add(cell);
@@ -148,11 +157,14 @@ namespace CHOP_fMRU_Assistant
             label1.Text = l;
             label1.Refresh();
 
-            String file = study.ImageFile(seriesUID, sliceposition, acquisitiontime);
-            if (file == "" || file==null) {
+            string[] files = (study.ImageFiles(seriesUID, sliceposition, acquisitiontime));
+            if (files == null)
+            {
                 pictureBox1.Image = null;
                 pictureBox1.Refresh();
-                return; }
+                return;
+            }
+            string file = files[0]; //Just show the first one
             gdcm.ImageReader reader = new gdcm.ImageReader();
             reader.SetFileName(file);
             reader.Read();
@@ -270,7 +282,7 @@ namespace CHOP_fMRU_Assistant
 
         private void button7_Click(object sender, EventArgs e)
         {
-            study.ExcludePosition(acquisitiontime);
+            study.ExcludePosition(sliceposition);
             PopulateCombobox();
             PopulateDatabox(true);
         }

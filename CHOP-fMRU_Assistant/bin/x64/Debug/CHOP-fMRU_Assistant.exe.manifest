@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CHOP-fMRU_Assistant.exe" size="40944">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CHOP-fMRU_Assistant.exe" size="41456">
       <assemblyIdentity name="CHOP-fMRU_Assistant" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>FNqzT/oqh99pw9RIOVNDIESfOvFx5TpkHDzefmlWkX0=</dsig:DigestValue>
+        <dsig:DigestValue>HIKoxD0MBHrE9rwho4bpRl52GsJfqqgfdCjU6zXkvJ4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>+4Fqamux8eXfq69i8Lx+mk5UCwuDblURMc93fK3TRIo=</dsig:DigestValue>
+        <dsig:DigestValue>L+Wvo/X9UUVCRu4UNTEqZs1HFQjyi63A0zroAz/GstM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -86,7 +86,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>pdVJ4dnJslhktO9Ybtn2BJB0Zkh5pPwXqaPShPH4uAw=</dsig:DigestValue>
+        <dsig:DigestValue>gVFVliq+FAslzl8dCbkLRqFvX1SZj6Yf5KH/IuYvaqU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
