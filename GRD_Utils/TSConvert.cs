@@ -8,6 +8,63 @@ namespace GRD_Utils
 {
     public class TSConvert:IDisposable
     {
+        private static gdcm.TagSetType selected_tags()
+        {
+            gdcm.TagSetType retval=new gdcm.TagSetType();
+            retval.Add(new gdcm.Tag(0x0002, 0x0001));
+            retval.Add(new gdcm.Tag(0x0002, 0x0002));
+            retval.Add(new gdcm.Tag(0x0002, 0x0003));
+            retval.Add(new gdcm.Tag(0x0002, 0x0010));
+            retval.Add(new gdcm.Tag(0x0002, 0x0012));
+            retval.Add(new gdcm.Tag(0x0002, 0x0013));
+            retval.Add(new gdcm.Tag(0x0008, 0x0005));
+            retval.Add(new gdcm.Tag(0x0008, 0x0012));
+            retval.Add(new gdcm.Tag(0x0008, 0x0013));
+            retval.Add(new gdcm.Tag(0x0008, 0x0014));
+            retval.Add(new gdcm.Tag(0x0008, 0x0016));
+            retval.Add(new gdcm.Tag(0x0008, 0x0018));
+            retval.Add(new gdcm.Tag(0x0008, 0x0020));
+            retval.Add(new gdcm.Tag(0x0008, 0x0021));
+            retval.Add(new gdcm.Tag(0x0008, 0x0022));
+            retval.Add(new gdcm.Tag(0x0008, 0x0023));
+            retval.Add(new gdcm.Tag(0x0008, 0x0030));
+            retval.Add(new gdcm.Tag(0x0008, 0x0031));
+            retval.Add(new gdcm.Tag(0x0008, 0x0032));
+            retval.Add(new gdcm.Tag(0x0008, 0x0033));
+            retval.Add(new gdcm.Tag(0x0008, 0x0050));
+            retval.Add(new gdcm.Tag(0x0008, 0x0060));
+            retval.Add(new gdcm.Tag(0x0008, 0x0064));
+            retval.Add(new gdcm.Tag(0x0008, 0x0070));
+            retval.Add(new gdcm.Tag(0x0008, 0x0080));
+            retval.Add(new gdcm.Tag(0x0008, 0x0081));
+            retval.Add(new gdcm.Tag(0x0008, 0x1030));
+            retval.Add(new gdcm.Tag(0x0008, 0x103E));
+            retval.Add(new gdcm.Tag(0x0010, 0x0010));
+            retval.Add(new gdcm.Tag(0x0010, 0x0020));
+            retval.Add(new gdcm.Tag(0x0018, 0x1060));
+            retval.Add(new gdcm.Tag(0x0020, 0x000D));
+            retval.Add(new gdcm.Tag(0x0020, 0x000E));
+            retval.Add(new gdcm.Tag(0x0020, 0x0010));
+            retval.Add(new gdcm.Tag(0x0020, 0x0011));
+            retval.Add(new gdcm.Tag(0x0020, 0x0012));
+            retval.Add(new gdcm.Tag(0x0020, 0x0013));
+            retval.Add(new gdcm.Tag(0x0020, 0x0032));
+            retval.Add(new gdcm.Tag(0x0020, 0x0037));
+            retval.Add(new gdcm.Tag(0x0020, 0x0052));
+            retval.Add(new gdcm.Tag(0x0020, 0x1041));
+            retval.Add(new gdcm.Tag(0x0028, 0x0002));
+            retval.Add(new gdcm.Tag(0x0028, 0x0010));
+            retval.Add(new gdcm.Tag(0x0028, 0x0011));
+            retval.Add(new gdcm.Tag(0x0028, 0x0030));
+            retval.Add(new gdcm.Tag(0x0028, 0x0100));
+            retval.Add(new gdcm.Tag(0x0028, 0x0101));
+            retval.Add(new gdcm.Tag(0x0028, 0x0102));
+            retval.Add(new gdcm.Tag(0x0028, 0x0103));
+            retval.Add(new gdcm.Tag(0x0028, 0x1050));
+            retval.Add(new gdcm.Tag(0x0028, 0x1051));
+            return retval;
+        }
+
         gdcm.TransferSyntax targetsyntax;
         public TSConvert(gdcm.TransferSyntax targetsyntax)
         {
@@ -43,7 +100,7 @@ namespace GRD_Utils
                 System.Diagnostics.Debug.WriteLine(inputf + " is also an image file. Converting.");
                 System.Diagnostics.Debug.WriteLine("IRead success=" + ireader.Read());
                 reader.SetFileName(inputf);
-                reader.Read();
+                reader.ReadSelectedTags(selected_tags(), true);
             }
             else { 
                 System.Diagnostics.Debug.WriteLine(inputf + " is not an image file."); 

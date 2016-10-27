@@ -41,6 +41,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -56,7 +57,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(12, 65);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(328, 260);
+            this.dataGridView1.Size = new System.Drawing.Size(328, 274);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -66,7 +67,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Location = new System.Drawing.Point(349, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(359, 313);
+            this.pictureBox1.Size = new System.Drawing.Size(359, 327);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -84,7 +85,7 @@
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.Location = new System.Drawing.Point(12, 360);
+            this.button1.Location = new System.Drawing.Point(188, 421);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(170, 23);
             this.button1.TabIndex = 3;
@@ -95,7 +96,7 @@
             // button2
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button2.Location = new System.Drawing.Point(12, 331);
+            this.button2.Location = new System.Drawing.Point(188, 363);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(170, 23);
             this.button2.TabIndex = 4;
@@ -106,7 +107,7 @@
             // button3
             // 
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button3.Location = new System.Drawing.Point(364, 331);
+            this.button3.Location = new System.Drawing.Point(364, 392);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(170, 23);
             this.button3.TabIndex = 5;
@@ -117,7 +118,7 @@
             // button4
             // 
             this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button4.Location = new System.Drawing.Point(540, 331);
+            this.button4.Location = new System.Drawing.Point(364, 421);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(170, 23);
             this.button4.TabIndex = 6;
@@ -128,7 +129,7 @@
             // button5
             // 
             this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button5.Location = new System.Drawing.Point(540, 360);
+            this.button5.Location = new System.Drawing.Point(540, 421);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(170, 23);
             this.button5.TabIndex = 8;
@@ -139,7 +140,7 @@
             // button6
             // 
             this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button6.Location = new System.Drawing.Point(364, 360);
+            this.button6.Location = new System.Drawing.Point(540, 392);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(170, 23);
             this.button6.TabIndex = 7;
@@ -168,7 +169,7 @@
             // button7
             // 
             this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button7.Location = new System.Drawing.Point(188, 360);
+            this.button7.Location = new System.Drawing.Point(540, 363);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(170, 23);
             this.button7.TabIndex = 12;
@@ -179,7 +180,7 @@
             // button8
             // 
             this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button8.Location = new System.Drawing.Point(188, 331);
+            this.button8.Location = new System.Drawing.Point(364, 363);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(170, 23);
             this.button8.TabIndex = 11;
@@ -187,11 +188,23 @@
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
+            // button9
+            // 
+            this.button9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button9.Location = new System.Drawing.Point(188, 392);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(170, 23);
+            this.button9.TabIndex = 13;
+            this.button9.Text = "Exclude all but this series";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
             // Study_Editor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(720, 393);
+            this.ClientSize = new System.Drawing.Size(720, 454);
+            this.Controls.Add(this.button9);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.label2);
@@ -230,5 +243,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
     }
 }

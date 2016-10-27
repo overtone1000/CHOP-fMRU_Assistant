@@ -13,6 +13,7 @@ namespace GRD_Utils
         public static gdcm.Tag tag_mediastorageSOPInstanceUID = new gdcm.Tag(0x2, 0x3);
         public static gdcm.Tag tag_transfersyntax = new gdcm.Tag(0x2, 0x10);
 
+        public static gdcm.Tag tag_specificcharacterset = new gdcm.Tag(0x8, 0x5);
         public static gdcm.Tag tag_instancecreationdate = new gdcm.Tag(0x8, 0x12);
         public static gdcm.Tag tag_instancecreationtime = new gdcm.Tag(0x8, 0x13);
         public static gdcm.Tag tag_instancecreationUID = new gdcm.Tag(0x8, 0x14);
@@ -69,8 +70,9 @@ namespace GRD_Utils
         public static gdcm.Tag tag_instanceNumber = new gdcm.Tag(0x20, 0x13);
         public static gdcm.Tag tag_seriesInstanceUID = new gdcm.Tag(0x20, 0xE);
         public static gdcm.Tag tag_studyInstanceUID = new gdcm.Tag(0x20, 0xD);
-        public static gdcm.Tag tag_sliceposition = new gdcm.Tag(0x20, 0x1041);     
-        
+        public static gdcm.Tag tag_sliceposition = new gdcm.Tag(0x20, 0x1041);
+        public static gdcm.Tag tag_seriesrelatedinstances = new gdcm.Tag(0x20, 0x1209);
+
         public static gdcm.Tag tag_requestingphysician = new gdcm.Tag(0x32, 0x1032);
         public static gdcm.Tag tag_requestingservice = new gdcm.Tag(0x32, 0x1033);
 

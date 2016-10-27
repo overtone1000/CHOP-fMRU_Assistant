@@ -7,14 +7,14 @@
     <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="CHOP-fMRU_Assistant.exe.manifest" size="5313">
+    <dependentAssembly dependencyType="install" codebase="CHOP-fMRU_Assistant.exe.manifest" size="5953">
       <assemblyIdentity name="CHOP-fMRU_Assistant.exe" version="1.0.0.14" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="amd64" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>GWDIwQrNvNobmHQ+eU3acBZYdG3WGG1ADlpKxHylpVc=</dsig:DigestValue>
+        <dsig:DigestValue>WPzhrsnDos8D0JPs4R+ucG5zxr66SmQJM682KpAIoMI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

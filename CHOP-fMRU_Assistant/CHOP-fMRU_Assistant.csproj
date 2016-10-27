@@ -182,6 +182,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\DICOM Fetch\DICOM_Fetch\DICOM Fetch.csproj">
+      <Project>{0a8935c5-f4be-42d5-9bc0-50174e553dea}</Project>
+      <Name>DICOM Fetch</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GRD_Utils\GRD_Utils.csproj">
       <Project>{36c715df-629a-4858-b502-f04f41eea6cc}</Project>
       <Name>GRD_Utils</Name>

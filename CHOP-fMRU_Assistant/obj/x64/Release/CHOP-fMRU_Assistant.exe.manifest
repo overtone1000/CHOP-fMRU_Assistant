@@ -43,14 +43,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CHOP-fMRU_Assistant.exe" size="39920">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CHOP-fMRU_Assistant.exe" size="40432">
       <assemblyIdentity name="CHOP-fMRU_Assistant" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>VTALEfu5Pu1Xc3uCzRksCecULVSwKOTdkRgEPwEPpLU=</dsig:DigestValue>
+        <dsig:DigestValue>eihjr8/sVEqgQtG8lFVkSV6+txxVk5UZBOxapZbDd6M=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DICOM_Fetch.exe" size="38912">
+      <assemblyIdentity name="DICOM_Fetch" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>GnRgH1V1eCk335fF3AyGD0kCTgWmnpt86UbGJTUZF1Y=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -67,14 +79,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GRD_Utils.dll" size="17408">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GRD_Utils.dll" size="17920">
       <assemblyIdentity name="GRD_Utils" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>6fE7W5AajcyTLN8IubcYg6mKQTA1K8N8qWjI+Bx9tJ4=</dsig:DigestValue>
+        <dsig:DigestValue>89z2HMFMPVd8GcW5b+tvt/tLkAZVCXye361OrNI0dhY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

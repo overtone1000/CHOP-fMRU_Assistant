@@ -42,7 +42,9 @@ namespace CHOP_fMRU_Assistant
         }
         public void change_SS_text()
         {
-            SS_text = "Current study: " + Properties.Settings.Default.CurrentStudy;
+            String s = Properties.Settings.Default.CurrentStudy;
+            if (s != "") { SS_text = "Current study: " + Properties.Settings.Default.CurrentStudy; }
+            else { SS_text = "No study selected."; }
             this.BeginInvoke(new delegate_SS(invokeSS_text));
         }
         public void change_SS_text(String status)
@@ -216,7 +218,7 @@ namespace CHOP_fMRU_Assistant
                     }
                 }
             }
-            importthread = new System.Threading.Thread(ImportPatient);
+            importthread = new System.Threading.Thread(ImportStudy);
             importthread.SetApartmentState(System.Threading.ApartmentState.STA);
             importthread.Start();
         }
@@ -224,7 +226,7 @@ namespace CHOP_fMRU_Assistant
         public String ImageToDICOMSubdirName = "\\output_files";
 
         private bool import_cont = false;
-        private void ImportPatient()
+        private void ImportStudy()
         {
             try
             {
@@ -238,7 +240,8 @@ namespace CHOP_fMRU_Assistant
                     if (!basedir.Exists) { basedir.Create(); }
 
                     GRD_Utils.FileIterator fi = new GRD_Utils.FileIterator(fbd.SelectedPath);
-                    GRD_Utils.TSConvert tsc = new GRD_Utils.TSConvert(new gdcm.TransferSyntax(gdcm.TransferSyntax.TSType.ExplicitVRLittleEndian));
+                    gdcm.TransferSyntax ts = new gdcm.TransferSyntax(gdcm.TransferSyntax.TSType.ExplicitVRLittleEndian);
+                    GRD_Utils.TSConvert tsc = new GRD_Utils.TSConvert(ts);
                     String newname;
                     while (import_cont && fi.MoveNext())
                     {
@@ -334,6 +337,7 @@ namespace CHOP_fMRU_Assistant
         private void deletePatientToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (!DatabaseDefined()) { return; }
+            if (!System.IO.Directory.Exists(Properties.Settings.Default.CurrentStudy)) { return; }
             System.IO.DirectoryInfo di = new System.IO.DirectoryInfo(Properties.Settings.Default.CurrentStudy);
             if (!di.Exists)
             {
@@ -347,7 +351,7 @@ namespace CHOP_fMRU_Assistant
                 {
                     di.Parent.Delete(true);
                 }
-                change_SS_text();
+                changecurrentstudy("");
             }
         }
 

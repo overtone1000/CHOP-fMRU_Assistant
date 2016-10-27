@@ -274,5 +274,12 @@ namespace CHOP_fMRU_Assistant
             PopulateCombobox();
             PopulateDatabox(true);
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            study.ExcludeAllButThisSeries(seriesUID);
+            PopulateCombobox();
+            PopulateDatabox(true);
+        }
     }
 }

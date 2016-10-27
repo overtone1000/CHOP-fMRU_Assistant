@@ -225,6 +225,13 @@ namespace CHOP_fMRU_Assistant
                 if (k.seriesUID == seriesUID) { ExcludeImage(k);}
             }
         }
+        public void ExcludeAllButThisSeries(String seriesUID)
+        {
+            foreach (DynamicStudyImageKey k in images.Keys.ToArray())
+            {
+                if (k.seriesUID != seriesUID) { ExcludeImage(k); }
+            }
+        }
         public void ExcludeBeforeTime(float time)
         {
             foreach (DynamicStudyImageKey k in images.Keys.ToArray())

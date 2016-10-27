@@ -60,6 +60,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gdcm-dlls_v2.6.5", "gdcm-dl
 		gdcm-dlls_v2.6.5\socketxx.dll = gdcm-dlls_v2.6.5\socketxx.dll
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DICOM Fetch", "..\DICOM Fetch\DICOM_Fetch\DICOM Fetch.csproj", "{0A8935C5-F4BE-42D5-9BC0-50174E553DEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -84,6 +86,14 @@ Global
 		{36C715DF-629A-4858-B502-F04F41EEA6CC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{36C715DF-629A-4858-B502-F04F41EEA6CC}.Release|x64.ActiveCfg = Release|Any CPU
 		{36C715DF-629A-4858-B502-F04F41EEA6CC}.Release|x64.Build.0 = Release|Any CPU
+		{0A8935C5-F4BE-42D5-9BC0-50174E553DEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A8935C5-F4BE-42D5-9BC0-50174E553DEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A8935C5-F4BE-42D5-9BC0-50174E553DEA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0A8935C5-F4BE-42D5-9BC0-50174E553DEA}.Debug|x64.Build.0 = Debug|Any CPU
+		{0A8935C5-F4BE-42D5-9BC0-50174E553DEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A8935C5-F4BE-42D5-9BC0-50174E553DEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A8935C5-F4BE-42D5-9BC0-50174E553DEA}.Release|x64.ActiveCfg = Release|Any CPU
+		{0A8935C5-F4BE-42D5-9BC0-50174E553DEA}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
