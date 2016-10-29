@@ -189,7 +189,10 @@ namespace CHOP_fMRU_Assistant
         public bool DatabaseDefined()
         {
             bool defined= (new System.IO.DirectoryInfo(Properties.Settings.Default.DataDirectory)).Exists;
-            if (!defined) { System.Windows.Forms.MessageBox.Show("Database directory not defined. Please go to settings."); }
+            if (!defined) {
+                changecurrentstudy("");
+                System.Windows.Forms.MessageBox.Show("Database directory not defined. Please go to settings.");
+            }
             return defined;
         }
 
@@ -241,8 +244,10 @@ namespace CHOP_fMRU_Assistant
 
                     GRD_Utils.FileIterator fi = new GRD_Utils.FileIterator(fbd.SelectedPath);
                     gdcm.TransferSyntax ts = new gdcm.TransferSyntax(gdcm.TransferSyntax.TSType.ExplicitVRLittleEndian);
+                    //gdcm.TransferSyntax ts = new gdcm.TransferSyntax(gdcm.TransferSyntax.TSType.ImplicitVRBigEndianPrivateGE); //just used to check that transfer syntax conversion works
                     GRD_Utils.TSConvert tsc = new GRD_Utils.TSConvert(ts);
                     String newname;
+                    
                     while (import_cont && fi.MoveNext())
                     {
                         change_SS_text("Converting: " + fi.Current.Name);
@@ -251,6 +256,7 @@ namespace CHOP_fMRU_Assistant
 
                         if (reader.CanRead())
                         {
+                            //For some reason, this must be initialized every time...
                             gdcm.TagSetType tst = new gdcm.TagSetType();
                             tst.Add(GRD_Utils.Tags.tag_patientname);
                             tst.Add(GRD_Utils.Tags.tag_studyInstanceUID);
@@ -281,8 +287,6 @@ namespace CHOP_fMRU_Assistant
                                 study = fixedfilename(study);
                             }
 
-                            tst.Dispose();
-
                             System.IO.DirectoryInfo patdir = new System.IO.DirectoryInfo(basedir + "\\" + patname);
                             if (!patdir.Exists) { patdir.Create(); }
                             System.IO.DirectoryInfo studydir = new System.IO.DirectoryInfo(patdir.FullName + "\\" + study);
@@ -297,7 +301,10 @@ namespace CHOP_fMRU_Assistant
                             newname = dicomrawdir.GetFiles().Count<System.IO.FileInfo>().ToString();
                             newname = newname.PadLeft(8, '0');
                             tsc.convert_transfer_syntax(fi.Current, dicomrawdir, newname);
+
+                            tst.Dispose();
                         }
+                        
                         reader.Dispose();
                         change_SS_prog(fi.totalfiles() - fi.filesleft(), 0, fi.totalfiles());
                     }
@@ -319,7 +326,7 @@ namespace CHOP_fMRU_Assistant
 
         private void changePatientToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (!DatabaseDefined()) { return; }
+            if (!DatabaseDefined()) {return;}
             Patients pf = new Patients(this);
             pf.ShowDialog();
         }
@@ -346,6 +353,10 @@ namespace CHOP_fMRU_Assistant
             }
             if (System.Windows.Forms.MessageBox.Show("Are you sure you want to delete this study? This cannot be undone.","",MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
+                foreach(System.IO.DirectoryInfo d in di.GetDirectories())
+                {
+                    d.Delete(true);
+                }
                 di.Delete(true);
                 if(di.Parent.GetDirectories().Count()==0)
                 {

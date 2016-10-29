@@ -53,6 +53,7 @@ namespace CHOP_fMRU_Assistant
                 {
                     closenow = true;
                     System.Windows.Forms.MessageBox.Show("No patients in database. Please import a study.");
+                    parent.changecurrentstudy("");
                 }
 
                 if (closenow) { this.Load += new EventHandler(closeonshown); }
@@ -71,6 +72,7 @@ namespace CHOP_fMRU_Assistant
             if (treeView1.SelectedNode == null || treeView1.SelectedNode.Nodes.Count > 0)
             {
                 System.Windows.Forms.MessageBox.Show("Invalid selection. Select a study or hit cancel.");
+                parent.changecurrentstudy("");
             }
             else
             {
