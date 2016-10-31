@@ -199,7 +199,8 @@
     <PreBuildEvent>copy "$(SolutionDir)gdcm-dlls_v2.6.5\*.dll" "$(TargetDir)*.dll"</PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>"$(SolutionDir)\zip_release.bat"</PostBuildEvent>
+    <PostBuildEvent>cd "$(SolutionDir)"
+"$(SolutionDir)\zip_release.bat"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

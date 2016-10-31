@@ -11,11 +11,11 @@ xcopy Release\*.* "temp\CHOP-fMRU_Assistant\Program Files" /E /Y /C /B
 
 cd temp
 
-"C:\Program Files\7-zip\7z.exe" a %zipname% *.* -r
+"C:\Program Files\7-zip\7z.exe" a %zipname% "*" -r
 
 move %zipname% "..\..\..\.."
 
-cd ..
+REM cd ..
 REM del temp\*.* /F /Q
 rmdir temp /S /Q
 
