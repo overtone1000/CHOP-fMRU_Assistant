@@ -25,7 +25,7 @@ namespace CHOP_fMRU_Assistant.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("No database selected.")]
+        [global::System.Configuration.DefaultSettingValueAttribute("fMRU_Database")]
         public string DataDirectory {
             get {
                 return ((string)(this["DataDirectory"]));
@@ -44,6 +44,18 @@ namespace CHOP_fMRU_Assistant.Properties {
             }
             set {
                 this["CurrentStudy"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("temporary_networkmove")]
+        public string CMove_dir {
+            get {
+                return ((string)(this["CMove_dir"]));
+            }
+            set {
+                this["CMove_dir"] = value;
             }
         }
     }

@@ -86,7 +86,7 @@ namespace CHOP_fMRU_Assistant
                     int images = study.ImagesThatExists(seriesUID, sliceposition, acquisitiontime);
                     if (images==1)
                     {
-                        cell.Style.BackColor = Color.Green;
+                        cell.Style.BackColor = Color.LightGreen;
                     }
                     else if(images==0)
                     {
@@ -169,16 +169,16 @@ namespace CHOP_fMRU_Assistant
             reader.SetFileName(file);
             reader.Read();
             gdcm.DataSet ds = reader.GetFile().GetDataSet();
-            ushort rows = (ushort)GRD_Utils.DataElementInterpreter.interpretDE(ds.GetDataElement(GRD_Utils.Tags.tag_imagerows));
-            ushort cols = (ushort)GRD_Utils.DataElementInterpreter.interpretDE(ds.GetDataElement(GRD_Utils.Tags.tag_imagecols));
+            ushort rows = (ushort)GRD_Utils.DataElementInterpreter.interpretDE<ushort>(ds.GetDataElement(GRD_Utils.Tags.tag_imagerows));
+            ushort cols = (ushort)GRD_Utils.DataElementInterpreter.interpretDE<ushort>(ds.GetDataElement(GRD_Utils.Tags.tag_imagecols));
             gdcm.Image image = reader.GetImage();
             
             //int width = (int)image.G(0);
             //int height = (int)image.GetDimension(1);
             //Bitmap bmp = new Bitmap(width,height);
             //System.Windows.Forms.MessageBox.Show("Unanticipated pixel format: " + image.GetPixelFormat().GetHighBit());
-            float wcent = float.Parse((string)GRD_Utils.DataElementInterpreter.interpretDE(ds.GetDataElement(GRD_Utils.Tags.tag_windowceneter)));
-            float wwidth = float.Parse((string)GRD_Utils.DataElementInterpreter.interpretDE(ds.GetDataElement(GRD_Utils.Tags.tag_windowwidth)));
+            float wcent = float.Parse((string)GRD_Utils.DataElementInterpreter.interpretDE<string>(ds.GetDataElement(GRD_Utils.Tags.tag_windowceneter)));
+            float wwidth = float.Parse((string)GRD_Utils.DataElementInterpreter.interpretDE<string>(ds.GetDataElement(GRD_Utils.Tags.tag_windowwidth)));
             System.Diagnostics.Debug.WriteLine("rows: " + rows); //should be 11
             System.Diagnostics.Debug.WriteLine("columns: " + cols); //should be 11
             System.Diagnostics.Debug.WriteLine("pixel format: " + image.GetPixelFormat().GetHighBit()); //should be 11

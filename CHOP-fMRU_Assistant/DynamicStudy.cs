@@ -341,13 +341,13 @@ namespace CHOP_fMRU_Assistant
             gdcm.DataSet ds = reader.GetFile().GetDataSet();
 
             Props p = new Props();
-            p.seriesUID = (String)GRD_Utils.DataElementInterpreter.interpretDE(ds.GetDataElement(GRD_Utils.Tags.tag_seriesInstanceUID));
-            p.seriesdesc = (String)GRD_Utils.DataElementInterpreter.interpretDE(ds.GetDataElement(GRD_Utils.Tags.tag_seriesDescription));
+            p.seriesUID = (String)GRD_Utils.DataElementInterpreter.interpretDE<String>(ds.GetDataElement(GRD_Utils.Tags.tag_seriesInstanceUID));
+            p.seriesdesc = (String)GRD_Utils.DataElementInterpreter.interpretDE<String>(ds.GetDataElement(GRD_Utils.Tags.tag_seriesDescription));
             //p.studyUID = (String)GRD_Utils.DataElementInterpreter.interpretDE(ds.GetDataElement(GRD_Utils.Tags.tag_studyInstanceUID));
             //p.triggertime = (String)GRD_Utils.DataElementInterpreter.interpretDE(ds.GetDataElement(GRD_Utils.Tags.tag_triggertime));
-            p.acquisitiontime = (String)GRD_Utils.DataElementInterpreter.interpretDE(ds.GetDataElement(GRD_Utils.Tags.tag_acquisitiontime));
+            p.acquisitiontime = (String)GRD_Utils.DataElementInterpreter.interpretDE<String>(ds.GetDataElement(GRD_Utils.Tags.tag_acquisitiontime));
             //p.accessionnum = (String)GRD_Utils.DataElementInterpreter.interpretDE(ds.GetDataElement(GRD_Utils.Tags.tag_studyaccessionnumber));
-            p.sliceposition = (String)GRD_Utils.DataElementInterpreter.interpretDE(ds.GetDataElement(GRD_Utils.Tags.tag_sliceposition));
+            p.sliceposition = (String)GRD_Utils.DataElementInterpreter.interpretDE<String>(ds.GetDataElement(GRD_Utils.Tags.tag_sliceposition));
             //p.transfersyntax = reader.GetImage().GetTransferSyntax().toString();
 
             reader.Dispose();

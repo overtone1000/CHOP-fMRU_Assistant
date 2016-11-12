@@ -42,7 +42,7 @@ namespace GRD_Utils
                 f = reader.GetFile();
                 gdcm.DataSet ds = f.GetDataSet();
 
-                retval=(String)DataElementInterpreter.interpretDE(ds.GetDataElement(t));
+                retval=(String)DataElementInterpreter.interpretDE<String>(ds.GetDataElement(t));
             }
             reader.Dispose();
             tst.Dispose();
@@ -77,8 +77,8 @@ namespace GRD_Utils
                 f = reader.GetFile();
                 gdcm.DataSet ds = f.GetDataSet();
 
-                DataElementInterpreter.interpretDE(ds.GetDataElement(t1));
-                DataElementInterpreter.interpretDE(ds.GetDataElement(t2));
+                //DataElementInterpreter.interpretDE(ds.GetDataElement(t1));
+                //DataElementInterpreter.interpretDE(ds.GetDataElement(t2));
             }
             reader.Dispose();
             tst.Dispose();

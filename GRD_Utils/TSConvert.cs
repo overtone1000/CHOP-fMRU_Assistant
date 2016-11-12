@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace GRD_Utils
 {
@@ -137,82 +138,78 @@ namespace GRD_Utils
 
         private bool processdicomfile(String inputf, String outputf)
         {
+            System.IO.FileInfo fi = new System.IO.FileInfo(outputf);
+            if(fi.Exists)
+            {
+                fi.Delete();
+            }
+
             bool retval = false;
             //Tried resusing these objects but "Read" function was not replacing old values from prior iteration
-            
+            gdcm.FileExplicitFilter fef = new gdcm.FileExplicitFilter(); ;
             gdcm.ImageReader ireader = new gdcm.ImageReader();
             
             System.Diagnostics.Debug.WriteLine(inputf + " is a DICOM file.");
             ireader.SetFileName(inputf);
             if (ireader.CanRead())
             {
-                gdcm.Reader reader = new gdcm.Reader();
-                gdcm.PixmapWriter pmwriter = new gdcm.PixmapWriter();
-                gdcm.Writer writer = new gdcm.Writer();
-                gdcm.Image image=null;
-                gdcm.Image newimage = null;
-                gdcm.File f = reader.GetFile();
-                gdcm.DataSet ds = f.GetDataSet();
-                gdcm.TagSetType tst = selected_tags();
-                gdcm.DataSet newds = new gdcm.DataSet();
+                //gdcm.Reader reader = new gdcm.Reader();
+                gdcm.ImageWriter imagewriter = new gdcm.ImageWriter();
+                //gdcm.Writer writer = new gdcm.Writer();
 
                 System.Diagnostics.Debug.WriteLine(inputf + " is also an image file. Converting.");
                 System.Diagnostics.Debug.WriteLine("IRead success=" + ireader.Read());
+
+                /*
                 reader.SetFileName(inputf);
-                reader.Read();
-                
+                if(!reader.Read())
+                {
+                    System.Diagnostics.Debug.WriteLine("Couldn't read DICOM file.");
+                    return false;
+                }
+                */
+
                 gdcm.Anonymizer anon=new gdcm.Anonymizer();
-                anon.SetFile(reader.GetFile());
+                anon.SetFile(ireader.GetFile());
+                //anon.RemoveGroupLength();
                 anon.RemovePrivateTags();
                 anon.RemoveRetired();
 
-                /*
-                reader.ReadSelectedTags(selected_tags(), true);
-                List<gdcm.Tag> tags = tags_to_keep();
-                foreach (gdcm.Tag t in tags)
-                {
-                    gdcm.DataElement newde = ds.GetDataElement(t);
-                    newds.Replace(newde);
-                }
-                gdcm.File newfile = new gdcm.File();
-                newfile.SetDataSet(newds);
-                */
-
-                ireader.Read();
-                image = ireader.GetImage();
+                //anon.GetFile().GetHeader().SetDataSetTransferSyntax(targetsyntax);
+                //System.Diagnostics.Debug.WriteLine(anon.GetFile().GetDataSet().toString());
 
                 //Don't just copy if transfer syntax is right. Bogus tags need to be removed.
                 //if (!(image.GetTransferSyntax().GetString() == targetsyntax.GetString()))
                 //{
-                cts.SetTransferSyntax(targetsyntax);
-                cts.SetInput(image);
+                ireader.SetFile(anon.GetFile());
+                //cts.SetTransferSyntax(ireader.GetImage().GetTransferSyntax());
+                
                 try
                 {
+                    if (ireader.GetImage().GetTransferSyntax().IsImplicit() && targetsyntax.IsExplicit())
+                    {
+                        fef.SetFile(ireader.GetFile());
+                        if (!fef.Change())
+                        {
+                            MessageBox.Show("Couldn't change to explicit TS");
+                            return false;
+                        }
+                    }
+
+                    cts.SetTransferSyntax(targetsyntax);
+                    cts.SetInput(ireader.GetImage());
+                    cts.SetForce(true);
+
                     //switch(true)
                     switch (cts.Change())
                     {
                         case true:
-                            ////iwriter.SetCheckFileMetaInformation(true);
-                            //iwriter.SetFile(f);
-                            //iwriter.SetImage(cts.GetOutput());
-                            //iwriter.SetFileName(outputf);
-                            //switch (iwriter.Write())
+
+                            imagewriter.SetImage(cts.GetOutput());
+                            imagewriter.SetFile(ireader.GetFile());
+                            imagewriter.SetFileName(outputf);
                             
-                            newimage = cts.GetOutput();
-
-                            List<gdcm.Tag> imagetags = tags_image();
-                            foreach (gdcm.Tag t in imagetags)
-                            {
-                                //f.GetDataSet().Replace(newimage.GetDataElement());
-                            }
-
-                            //writer.SetFile(reader.GetFile());
-                            //writer.SetFileName(outputf);
-                            //switch(writer.Write())
-                            pmwriter.SetFile(reader.GetFile());
-                            pmwriter.SetFileName(outputf);
-                            pmwriter.SetImage(newimage);
-                            switch(pmwriter.Write())
+                            switch(imagewriter.Write())
                             {
                                 case true:
                                     System.Diagnostics.Debug.WriteLine("Converted to " + outputf);
@@ -222,6 +219,7 @@ namespace GRD_Utils
                                     System.Diagnostics.Debug.WriteLine("ImageWriter failed");
                                     break;
                             }
+                            
                             break;
                         case false:
                             System.Diagnostics.Debug.WriteLine("Transfer syntax conversion failed.");
@@ -240,15 +238,15 @@ namespace GRD_Utils
                 //    inf.CopyTo(outputf, true);
                 //    retval = true;
                 //}
-                reader.Dispose();
-                if (image != null) { image.Dispose(); }
-                if (newimage !=null) { newimage.Dispose(); }
-                writer.Dispose();
-                f.Dispose();
-                ds.Dispose();
-                tst.Dispose();
-                newds.Dispose();
-                pmwriter.Dispose();
+                //reader.Dispose();
+                //writer.Dispose();
+                //f.Dispose();
+                //ds.Dispose();
+                //tst.Dispose();
+                //newds.Dispose();
+                imagewriter.Dispose();
+                anon.Dispose();
+                fef.Dispose();
             }
             else
             {
