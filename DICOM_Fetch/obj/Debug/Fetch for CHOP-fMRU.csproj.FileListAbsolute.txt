@@ -1,0 +1,30 @@
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Fetch for CHOP-fMRU\bin\Debug\Fetch for CHOP-fMRU.exe.config
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Fetch for CHOP-fMRU\obj\Debug\Fetch for CHOP-fMRU.csprojResolveAssemblyReference.cache
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Fetch for CHOP-fMRU\obj\Debug\Fetch_for_CHOP_fMRU.MainForm.resources
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Fetch for CHOP-fMRU\obj\Debug\Fetch_for_CHOP_fMRU.form_NetworkConfig.resources
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Fetch for CHOP-fMRU\obj\Debug\Fetch_for_CHOP_fMRU.Properties.Resources.resources
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Fetch for CHOP-fMRU\obj\Debug\Fetch for CHOP-fMRU.csproj.GenerateResource.Cache
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Fetch for CHOP-fMRU\bin\Debug\Fetch for CHOP-fMRU.exe
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Fetch for CHOP-fMRU\bin\Debug\Fetch for CHOP-fMRU.pdb
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Fetch for CHOP-fMRU\obj\Debug\Fetch for CHOP-fMRU.exe
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Fetch for CHOP-fMRU\obj\Debug\Fetch for CHOP-fMRU.pdb
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Fetch for CHOP-fMRU\obj\Debug\Fetch_for_CHOP_fMRU.form_NewNetworkConfig.resources
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Fetch for CHOP-fMRU\bin\Debug\gdcm-sharp.dll
+E:\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Fetch for CHOP-fMRU\bin\Debug\Fetch for CHOP-fMRU.exe.config
+E:\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Fetch for CHOP-fMRU\bin\Debug\Fetch for CHOP-fMRU.exe
+E:\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Fetch for CHOP-fMRU\bin\Debug\Fetch for CHOP-fMRU.pdb
+E:\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Fetch for CHOP-fMRU\bin\Debug\gdcm-sharp.dll
+E:\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Fetch for CHOP-fMRU\obj\Debug\Fetch_for_CHOP_fMRU.MainForm.resources
+E:\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Fetch for CHOP-fMRU\obj\Debug\Fetch_for_CHOP_fMRU.form_NetworkConfig.resources
+E:\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Fetch for CHOP-fMRU\obj\Debug\Fetch_for_CHOP_fMRU.form_NewNetworkConfig.resources
+E:\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Fetch for CHOP-fMRU\obj\Debug\Fetch_for_CHOP_fMRU.Properties.Resources.resources
+E:\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Fetch for CHOP-fMRU\obj\Debug\Fetch for CHOP-fMRU.csproj.GenerateResource.Cache
+E:\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Fetch for CHOP-fMRU\obj\Debug\Fetch for CHOP-fMRU.exe
+E:\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Fetch for CHOP-fMRU\obj\Debug\Fetch for CHOP-fMRU.pdb
+E:\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Fetch for CHOP-fMRU\obj\Debug\Fetch for CHOP-fMRU.csprojResolveAssemblyReference.cache
+E:\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Fetch for CHOP-fMRU\bin\Debug\Program.cs
+E:\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Fetch for CHOP-fMRU\bin\Debug\GRD_Utils.exe
+E:\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Fetch for CHOP-fMRU\bin\Debug\GRD_Utils.pdb
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Fetch for CHOP-fMRU\bin\Debug\Program.cs
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Fetch for CHOP-fMRU\bin\Debug\GRD_Utils.exe
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\GRD_Utils\GRD_Utils\Fetch for CHOP-fMRU\bin\Debug\GRD_Utils.pdb

@@ -1,0 +1,32 @@
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\DICOM Fetch\DICOM_Fetch\bin\Debug\Program.cs
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\DICOM Fetch\DICOM_Fetch\bin\Debug\movescu.exe
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\DICOM Fetch\DICOM_Fetch\bin\Debug\DICOM_Fetch.pdb
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\DICOM Fetch\DICOM_Fetch\bin\Debug\gdcm-sharp.dll
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\DICOM Fetch\DICOM_Fetch\bin\Debug\GRD_Utils.dll
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\DICOM Fetch\DICOM_Fetch\bin\Debug\GRD_Utils.pdb
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\DICOM Fetch\DICOM_Fetch\obj\Debug\DICOM Fetch.csprojResolveAssemblyReference.cache
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\DICOM Fetch\DICOM_Fetch\obj\Debug\DICOM_Fetch.MainForm.resources
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\DICOM Fetch\DICOM_Fetch\obj\Debug\DICOM_Fetch.form_NetworkConfig.resources
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\DICOM Fetch\DICOM_Fetch\obj\Debug\DICOM_Fetch.form_NewNetworkConfig.resources
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\DICOM Fetch\DICOM_Fetch\obj\Debug\DICOM_Fetch.Properties.Resources.resources
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\DICOM Fetch\DICOM_Fetch\obj\Debug\DICOM Fetch.csproj.GenerateResource.Cache
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\DICOM Fetch\DICOM_Fetch\obj\Debug\DICOM_Fetch.pdb
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\DICOM Fetch\DICOM_Fetch\bin\Debug\DICOM_Fetch.dll.config
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\DICOM Fetch\DICOM_Fetch\bin\Debug\DICOM_Fetch.dll
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\DICOM Fetch\DICOM_Fetch\obj\Debug\DICOM_Fetch.dll
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\DICOM_Fetch\bin\Debug\movescu.exe
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\DICOM_Fetch\bin\Debug\Program.cs
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\DICOM_Fetch\bin\Debug\DICOM_Fetch.dll.config
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\DICOM_Fetch\bin\Debug\DICOM_Fetch.dll
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\DICOM_Fetch\bin\Debug\DICOM_Fetch.pdb
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\DICOM_Fetch\bin\Debug\gdcm-sharp.dll
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\DICOM_Fetch\bin\Debug\GRD_Utils.dll
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\DICOM_Fetch\bin\Debug\GRD_Utils.pdb
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\DICOM_Fetch\obj\Debug\DICOM Fetch.csprojResolveAssemblyReference.cache
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\DICOM_Fetch\obj\Debug\DICOM_Fetch.MainForm.resources
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\DICOM_Fetch\obj\Debug\DICOM_Fetch.form_NetworkConfig.resources
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\DICOM_Fetch\obj\Debug\DICOM_Fetch.form_NewNetworkConfig.resources
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\DICOM_Fetch\obj\Debug\DICOM_Fetch.Properties.Resources.resources
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\DICOM_Fetch\obj\Debug\DICOM Fetch.csproj.GenerateResource.Cache
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\DICOM_Fetch\obj\Debug\DICOM_Fetch.dll
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\DICOM_Fetch\obj\Debug\DICOM_Fetch.pdb

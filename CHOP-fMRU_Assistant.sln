@@ -60,7 +60,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gdcm-dlls_v2.6.5", "gdcm-dl
 		gdcm-dlls_v2.6.5\socketxx.dll = gdcm-dlls_v2.6.5\socketxx.dll
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DICOM Fetch", "..\DICOM Fetch\DICOM_Fetch\DICOM Fetch.csproj", "{0A8935C5-F4BE-42D5-9BC0-50174E553DEA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DICOM Fetch", "DICOM_Fetch\DICOM Fetch.csproj", "{0A8935C5-F4BE-42D5-9BC0-50174E553DEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

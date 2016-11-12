@@ -43,26 +43,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CHOP-fMRU_Assistant.exe" size="65520">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CHOP-fMRU_Assistant.exe" size="66544">
       <assemblyIdentity name="CHOP-fMRU_Assistant" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>P62ykIQg3jxnANIOU3grAZOt6eX5q1HVrFNKuzUgPo8=</dsig:DigestValue>
+        <dsig:DigestValue>otSE8TNT88qtkH+Bz1/0VIxdYgD95kQERz96GceH3x8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DICOM_Fetch.exe" size="47616">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DICOM_Fetch.dll" size="47104">
       <assemblyIdentity name="DICOM_Fetch" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>i01LLlira6fmZlqkBSZ2N5bmN8Tm01hgwopF/Vf9zN4=</dsig:DigestValue>
+        <dsig:DigestValue>NpBEHP4zLS3K7tFba57RcbSPunIQOV8IrNbiUuheOUU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -79,14 +79,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GRD_Utils.dll" size="21504">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GRD_Utils.dll" size="22528">
       <assemblyIdentity name="GRD_Utils" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>C/3fl38zqsKHLD1N4JW5oNkT343qSI1I5nx5xKddrQM=</dsig:DigestValue>
+        <dsig:DigestValue>KBH1VzDSnQoCbIinsUhtG6RqxFfuQQmj2rh6OKK2BxY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -191,7 +191,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\DICOM Fetch\DICOM_Fetch\DICOM Fetch.csproj">
+    <ProjectReference Include="..\DICOM_Fetch\DICOM Fetch.csproj">
       <Project>{0a8935c5-f4be-42d5-9bc0-50174e553dea}</Project>
       <Name>DICOM Fetch</Name>
     </ProjectReference>
