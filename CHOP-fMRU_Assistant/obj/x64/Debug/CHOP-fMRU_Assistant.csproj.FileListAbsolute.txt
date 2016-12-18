@@ -5,6 +5,7 @@ C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-fMRU_Assistant\bin\x64\Debug\CHOP-fMRU_Assistant.application
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-fMRU_Assistant\bin\x64\Debug\CHOP-fMRU_Assistant.exe
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-fMRU_Assistant\bin\x64\Debug\CHOP-fMRU_Assistant.pdb
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-fMRU_Assistant\bin\x64\Debug\DICOM_Fetch.dll
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-fMRU_Assistant\bin\x64\Debug\gdcm-sharp.dll
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-fMRU_Assistant\bin\x64\Debug\GRD_Utils.dll
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-fMRU_Assistant\bin\x64\Debug\DICOM_Fetch.pdb
@@ -22,4 +23,3 @@ C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-fMRU_Assistant\obj\x64\Debug\CHOP-fMRU_Assistant.application
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-fMRU_Assistant\obj\x64\Debug\CHOP-fMRU_Assistant.exe
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-fMRU_Assistant\obj\x64\Debug\CHOP-fMRU_Assistant.pdb
-C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\CHOP-fMRU_Assistant\bin\x64\Debug\DICOM_Fetch.dll

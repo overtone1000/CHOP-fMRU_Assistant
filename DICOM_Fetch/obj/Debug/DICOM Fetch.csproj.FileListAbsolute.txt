@@ -14,8 +14,8 @@ C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\DICOM Fetch\DICOM_Fetch\o
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\DICOM Fetch\DICOM_Fetch\bin\Debug\DICOM_Fetch.dll.config
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\DICOM Fetch\DICOM_Fetch\bin\Debug\DICOM_Fetch.dll
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\DICOM Fetch\DICOM_Fetch\obj\Debug\DICOM_Fetch.dll
-C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\DICOM_Fetch\bin\Debug\movescu.exe
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\DICOM_Fetch\bin\Debug\Program.cs
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\DICOM_Fetch\bin\Debug\movescu.exe
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\DICOM_Fetch\bin\Debug\DICOM_Fetch.dll.config
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\DICOM_Fetch\bin\Debug\DICOM_Fetch.dll
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\DICOM_Fetch\bin\Debug\DICOM_Fetch.pdb

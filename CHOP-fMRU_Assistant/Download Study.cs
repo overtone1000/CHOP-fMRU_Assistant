@@ -78,6 +78,12 @@ namespace CHOP_fMRU_Assistant
             this.listView2.Items.Clear();
             this.listView3.Items.Clear();
             this.DialogResult = resulttosend;
+
+            configtest.Cancel();
+            Cfind_patients.Cancel();
+            Cfind_studies.Cancel();
+            Cfind_series.Cancel();
+            CMove_series_movescu.Cancel();
         }
 
         CEcho configtest;

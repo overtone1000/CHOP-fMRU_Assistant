@@ -203,6 +203,9 @@
   <ItemGroup>
     <Content Include="Icon1.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>copy "$(SolutionDir)gdcm-dlls_v2.6.5\*.dll" "$(TargetDir)*.dll"</PreBuildEvent>

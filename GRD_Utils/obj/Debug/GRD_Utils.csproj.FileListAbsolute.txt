@@ -30,6 +30,6 @@ C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\GRD_U
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\GRD_Utils\bin\Debug\GRD_Utils.dll
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\GRD_Utils\bin\Debug\GRD_Utils.pdb
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\GRD_Utils\bin\Debug\gdcm-sharp.dll
-C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\GRD_Utils\obj\Debug\GRD_Utils.csprojResolveAssemblyReference.cache
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\GRD_Utils\obj\Debug\GRD_Utils.dll
 C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\GRD_Utils\obj\Debug\GRD_Utils.pdb
+C:\Users\Tyler Moore\Dropbox\My Programs\Visual Studio\CHOP-fMRU_Assistant\GRD_Utils\obj\Debug\GRD_Utils.csprojResolveAssemblyReference.cache

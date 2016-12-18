@@ -50,7 +50,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>cRqB+Kcaa/QmDKssYv4h6sEjXYt1uTjfqW8JFq5BWzM=</dsig:DigestValue>
+        <dsig:DigestValue>1gBbqkRsTkgh+60zcfjyGl+fyk/MN9YS/0Ye6pXCoOw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>KGfJDZ7TgJqT14HVPy0nHEoI6oO0TXnxaoFoEgw+sk4=</dsig:DigestValue>
+        <dsig:DigestValue>S3nwSfV4A+3WBK2O4TKQr9EyZobRczT8jUN62em9DfY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -79,14 +79,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GRD_Utils.dll" size="19968">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GRD_Utils.dll" size="20480">
       <assemblyIdentity name="GRD_Utils" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>6QJOc3wbk8HszWpdZqBjYyb9QNOGXVKAlMsS6qjB068=</dsig:DigestValue>
+        <dsig:DigestValue>050z10l3lwGcQm9xXJm99gziGFNNHFAppqwXf0si/00=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

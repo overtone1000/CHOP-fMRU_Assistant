@@ -298,6 +298,7 @@ namespace CHOP_fMRU_Assistant
 
                 GRD_Utils.FileIterator fi = new GRD_Utils.FileIterator(import_directory);
                 gdcm.TransferSyntax ts = new gdcm.TransferSyntax(gdcm.TransferSyntax.TSType.ExplicitVRLittleEndian);
+                //gdcm.TransferSyntax ts = new gdcm.TransferSyntax(gdcm.TransferSyntax.TSType.ImplicitVRLittleEndian);
                 //gdcm.TransferSyntax ts = new gdcm.TransferSyntax(gdcm.TransferSyntax.TSType.ImplicitVRBigEndianPrivateGE); //just used to check that transfer syntax conversion works
                 GRD_Utils.TSConvert tsc = new GRD_Utils.TSConvert(ts);
                 String newname;
@@ -374,7 +375,7 @@ namespace CHOP_fMRU_Assistant
             }
             catch(Exception e)
             {
-                MessageBox.Show(e.StackTrace);
+                MessageBox.Show(e.Message);
             }
         }
 
